@@ -1,0 +1,774 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Curriculum Vitae | Derese Getaneh Woldemariam</title>
+<meta name="description" content="Curriculum Vitae of Derese Getaneh Woldemariam, English Language Teacher.">
+<meta name="theme-color" content="#f3f0e8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navigation.css">
+<script defer src="js/config.js"></script>
+<script defer src="js/main.js"></script>
+
+<style>
+.cv-hero{
+  position:relative;
+  padding:100px 0 85px;
+  overflow:hidden;
+}
+
+.cv-hero:before{
+  content:"CV";
+  position:absolute;
+  right:-30px;
+  top:-85px;
+  font-family:Georgia,serif;
+  font-size:clamp(12rem,30vw,27rem);
+  font-weight:700;
+  line-height:1;
+  color:rgba(36,72,59,.045);
+  pointer-events:none;
+}
+
+.cv-hero .wrap{
+  position:relative;
+  z-index:1;
+}
+
+.cv-hero h1{
+  max-width:850px;
+  margin:12px 0 18px;
+  font-family:Georgia,serif;
+  font-size:clamp(3rem,7vw,6rem);
+  line-height:1;
+  letter-spacing:-.055em;
+}
+
+.cv-hero p{
+  max-width:720px;
+  color:var(--muted);
+  line-height:1.85;
+  font-size:1.08rem;
+}
+
+.cv-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:28px;
+}
+
+.cv-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.5fr) minmax(270px,.7fr);
+  gap:28px;
+  align-items:start;
+}
+
+.cv-main,
+.cv-sidebar{
+  display:grid;
+  gap:20px;
+}
+
+.cv-card{
+  padding:32px;
+  border-radius:23px;
+  background:var(--surface);
+  border:1px solid var(--line);
+}
+
+.cv-card h2{
+  margin:7px 0 22px;
+  font-family:Georgia,serif;
+  font-size:1.85rem;
+}
+
+.cv-card p{
+  color:var(--muted);
+  line-height:1.82;
+}
+
+.cv-kicker{
+  color:var(--accent);
+  font-size:.7rem;
+  font-weight:900;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.cv-timeline{
+  position:relative;
+  display:grid;
+  gap:0;
+}
+
+.cv-timeline:before{
+  content:"";
+  position:absolute;
+  left:8px;
+  top:8px;
+  bottom:8px;
+  width:1px;
+  background:var(--line);
+}
+
+.cv-entry{
+  position:relative;
+  padding:0 0 30px 34px;
+}
+
+.cv-entry:last-child{
+  padding-bottom:0;
+}
+
+.cv-entry:before{
+  content:"";
+  position:absolute;
+  left:3px;
+  top:5px;
+  width:11px;
+  height:11px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 0 5px var(--soft);
+}
+
+.cv-date{
+  margin-bottom:7px;
+  color:var(--accent);
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.cv-entry h3{
+  margin:0 0 6px;
+  font-size:1.1rem;
+}
+
+.cv-entry strong{
+  display:block;
+  margin-bottom:8px;
+  color:var(--green);
+  font-size:.94rem;
+}
+
+.cv-entry p{
+  margin:0;
+}
+
+.cv-profile{
+  padding:34px;
+  border-radius:25px;
+  background:var(--green);
+  color:#fff;
+}
+
+.cv-profile .cv-kicker{
+  color:#ddc98e;
+}
+
+.cv-profile h2{
+  color:#fff;
+  margin:8px 0 16px;
+  font-family:Georgia,serif;
+  font-size:2rem;
+}
+
+.cv-profile p{
+  color:rgba(255,255,255,.77);
+  line-height:1.82;
+}
+
+.cv-contact{
+  display:grid;
+  gap:13px;
+  margin-top:24px;
+}
+
+.cv-contact a,
+.cv-contact div{
+  display:block;
+  padding:13px 15px;
+  border-radius:13px;
+  background:rgba(255,255,255,.07);
+  color:rgba(255,255,255,.9);
+  text-decoration:none;
+  overflow-wrap:anywhere;
+}
+
+.cv-contact a:hover{
+  background:rgba(255,255,255,.13);
+}
+
+.cv-list{
+  display:grid;
+  gap:11px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.cv-list li{
+  position:relative;
+  padding:14px 15px 14px 39px;
+  border-radius:13px;
+  background:var(--soft);
+  color:var(--muted);
+  line-height:1.55;
+}
+
+.cv-list li:before{
+  content:"";
+  position:absolute;
+  left:16px;
+  top:21px;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--accent);
+}
+
+.cv-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+
+.cv-mini{
+  padding:19px;
+  border-radius:16px;
+  background:var(--soft);
+}
+
+.cv-mini strong{
+  display:block;
+  margin-bottom:6px;
+  color:var(--green);
+}
+
+.cv-mini span{
+  color:var(--muted);
+  font-size:.94rem;
+  line-height:1.6;
+}
+
+.cv-recognition{
+  display:grid;
+  gap:10px;
+}
+
+.cv-recognition div{
+  padding:15px 17px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  color:var(--muted);
+  line-height:1.55;
+}
+
+.cv-download{
+  position:sticky;
+  top:105px;
+  padding:28px;
+  border-radius:23px;
+  background:
+    radial-gradient(circle at 100% 0,rgba(178,138,74,.17),transparent 35%),
+    var(--surface);
+  border:1px solid rgba(178,138,74,.3);
+}
+
+.cv-download h2{
+  margin:8px 0 12px;
+  font-family:Georgia,serif;
+}
+
+.cv-download p{
+  margin:0 0 22px;
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.cv-download .button{
+  width:100%;
+  text-align:center;
+}
+
+.cv-note{
+  margin-top:12px;
+  color:var(--muted);
+  font-size:.78rem;
+  line-height:1.55;
+}
+
+.cv-quote{
+  padding:30px;
+  border-left:3px solid var(--accent);
+  background:var(--soft);
+  border-radius:0 18px 18px 0;
+}
+
+.cv-quote p{
+  margin:0;
+  font-family:Georgia,serif;
+  font-size:1.35rem;
+  line-height:1.55;
+  color:var(--ink);
+}
+
+.cv-quote span{
+  display:block;
+  margin-top:12px;
+  color:var(--muted);
+  font-size:.85rem;
+}
+
+.cv-bottom{
+  margin-top:28px;
+  padding:42px;
+  border-radius:25px;
+  background:var(--green);
+  text-align:center;
+}
+
+.cv-bottom .cv-kicker{
+  color:#ddc98e;
+}
+
+.cv-bottom h2{
+  max-width:760px;
+  margin:8px auto 15px;
+  color:#fff;
+  font-family:Georgia,serif;
+  font-size:clamp(2rem,4vw,3rem);
+}
+
+.cv-bottom p{
+  max-width:650px;
+  margin:0 auto;
+  color:rgba(255,255,255,.74);
+  line-height:1.8;
+}
+
+@media(max-width:900px){
+  .cv-layout{
+    grid-template-columns:1fr;
+  }
+
+  .cv-download{
+    position:static;
+  }
+}
+
+@media(max-width:650px){
+  .cv-hero{
+    padding:72px 0 60px;
+  }
+
+  .cv-hero h1{
+    font-size:clamp(2.8rem,14vw,4.6rem);
+  }
+
+  .cv-card,
+  .cv-profile,
+  .cv-download,
+  .cv-bottom{
+    padding:25px;
+  }
+
+  .cv-grid{
+    grid-template-columns:1fr;
+  }
+
+  .cv-actions{
+    flex-direction:column;
+  }
+
+  .cv-actions .button{
+    width:100%;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Derese Getaneh</a>
+
+    <button class="menu" data-menu aria-label="Open navigation" aria-expanded="false">
+      Menu
+    </button>
+
+    <nav class="nav" data-nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a> <a href="academic-journey.html">Academic Journey</a>
+<a href="teaching.html">Teaching</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="achievements.html">Achievements</a>
+<a href="projects.html">Projects</a>
+<a href="student-impact.html">Student Impact</a>
+<a href="legacy.html">Legacy</a>
+<a href="contact.html">Contact</a>
+<a href="cv.html" class="active" aria-current="page">CV</a>
+<a class="platform" data-platform href="#">Teacher Platform &rarr;</a></nav>
+</div>
+</header>
+
+<main id="main">
+
+<section class="cv-hero">
+  <div class="wrap">
+    <div class="kicker">Curriculum Vitae</div>
+
+    <h1>Derese Getaneh Woldemariam</h1>
+
+    <p>
+      English Language Teacher with experience in Grade 12 teaching,
+      student advising, school leadership, coordination, and educational
+      activities.
+    </p>
+
+    <div class="cv-actions">
+      <a class="button" href="cv/derese-getaneh-woldemariam-cv.pdf" download>
+        Download CV &darr;
+      </a>
+      <a class="button secondary" href="contact.html">
+        Contact &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap cv-layout">
+
+    <div class="cv-main">
+
+      <article class="cv-profile">
+        <div class="cv-kicker">Professional Profile</div>
+        <h2>English Language Teacher</h2>
+
+        <p>
+          English Language Teacher with teaching experience in secondary
+          and preparatory school settings. My work has included classroom
+          teaching, student advising, homeroom responsibilities, school
+          leadership, coordination, and participation in educational and
+          community activities.
+        </p>
+
+        <div class="cv-contact">
+          <a href="mailto:deresegech@gmail.com">deresegech@gmail.com</a>
+          <a href="tel:+251921130929">0921130929</a>
+          <a href="tel:+251982165373">0982165373</a>
+          <div>Debrebrehan, Ethiopia</div>
+        </div>
+      </article>
+
+      <article class="cv-card">
+        <div class="cv-kicker">Career Experience</div>
+        <h2>Teaching Experience</h2>
+
+        <div class="cv-timeline">
+
+          <div class="cv-entry">
+            <div class="cv-date">2017 &ndash; 2018 E.C.</div>
+            <h3>English Language Teacher</h3>
+            <strong>Debrebrehan University Temporary Boarding School</strong>
+            <p>
+              Taught English in a university boarding-school environment.
+            </p>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-date">2003 &ndash; 2016 E.C.</div>
+            <h3>English Language Teacher</h3>
+            <strong>Shewarobit General Secondary and Preparatory School</strong>
+            <p>
+              Taught English and served in additional school responsibilities,
+              including department head, unit leader, homeroom teacher,
+              school management member, minimedia coordinator, project
+              designer, and school Facebook page administrator.
+            </p>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-date">2000 &ndash; 2002 E.C.</div>
+            <h3>English Language Teacher</h3>
+            <strong>Molale Preparatory School</strong>
+            <p>
+              Worked as an English language teacher during the early stage
+              of my teaching career.
+            </p>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-date">Three years</div>
+            <h3>English Language Teacher</h3>
+            <strong>Bisrat College, Shewarobit Town</strong>
+            <p>
+              Taught English at Bisrat College for three years.
+            </p>
+          </div>
+
+        </div>
+      </article>
+
+      <article class="cv-card">
+        <div class="cv-kicker">Education</div>
+        <h2>Academic Preparation</h2>
+
+        <div class="cv-timeline">
+
+          <div class="cv-entry">
+            <div class="cv-date">2012 E.C.</div>
+            <h3>Second Degree in TEFL</h3>
+            <strong>Arba Minch University</strong>
+            <p>
+              Second degree in Teaching English as a Foreign Language (TEFL).
+            </p>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-date">2000 E.C.</div>
+            <h3>First Degree</h3>
+            <strong>Bahirdar University</strong>
+            <p>
+              First degree completed in 2000 E.C.
+            </p>
+          </div>
+
+        </div>
+      </article>
+
+      <article class="cv-card">
+        <div class="cv-kicker">Professional Responsibilities</div>
+        <h2>Leadership &amp; Service</h2>
+
+        <ul class="cv-list">
+          <li>Department Head</li>
+          <li>Unit Leader</li>
+          <li>Minimedia Coordinator</li>
+          <li>Project Designer</li>
+          <li>School Facebook Page Administrator</li>
+          <li>Homeroom Teacher</li>
+          <li>School Management Member</li>
+          <li>Student advising and volunteer work</li>
+        </ul>
+      </article>
+
+      <article class="cv-card">
+        <div class="cv-kicker">Recognition</div>
+        <h2>Professional Recognition</h2>
+
+        <div class="cv-recognition">
+
+          <div>
+            Selected as a <strong>Model Teacher in North Shoa Zone</strong>
+            in 2014 E.C.
+          </div>
+
+          <div>
+            Received certificates and recognition from
+            <strong>Shewarobit General Secondary School</strong>.
+          </div>
+
+          <div>
+            Received recognition from
+            <strong>Debrebrehan University</strong>.
+          </div>
+
+          <div>
+            Received recognition from
+            <strong>North Shoa Education Office</strong>.
+          </div>
+
+        </div>
+      </article>
+
+      <article class="cv-card">
+        <div class="cv-kicker">Skills</div>
+        <h2>Professional Skills</h2>
+
+        <div class="cv-grid">
+
+          <div class="cv-mini">
+            <strong>Communication</strong>
+            <span>Communication in classroom and professional settings.</span>
+          </div>
+
+          <div class="cv-mini">
+            <strong>Mentoring</strong>
+            <span>Supporting and advising students in their learning.</span>
+          </div>
+
+          <div class="cv-mini">
+            <strong>Problem Solving</strong>
+            <span>Responding to practical challenges in school work.</span>
+          </div>
+
+          <div class="cv-mini">
+            <strong>Teamwork</strong>
+            <span>Working with colleagues and students on school activities.</span>
+          </div>
+
+          <div class="cv-mini">
+            <strong>Student Support</strong>
+            <span>Advising, mentoring, and supporting students.</span>
+          </div>
+
+          <div class="cv-mini">
+            <strong>Teaching Practice</strong>
+            <span>Student-centered and communicative English teaching.</span>
+          </div>
+
+        </div>
+      </article>
+
+      <article class="cv-card">
+        <div class="cv-kicker">Technology</div>
+        <h2>Tools &amp; Educational Technology</h2>
+
+        <div class="cv-grid">
+
+          <div class="cv-mini">
+            <strong>Devices</strong>
+            <span>Laptop, desktop computer, tablet, and mobile phone.</span>
+          </div>
+
+          <div class="cv-mini">
+            <strong>Microsoft Office</strong>
+            <span>Microsoft Word and Excel.</span>
+          </div>
+
+          <div class="cv-mini">
+            <strong>ICT</strong>
+            <span>ICT and educational technology.</span>
+          </div>
+
+          <div class="cv-mini">
+            <strong>Educational Technology</strong>
+            <span>Technology used in teaching and school-related work.</span>
+          </div>
+
+        </div>
+      </article>
+
+      <article class="cv-card">
+        <div class="cv-kicker">Writing &amp; Research</div>
+        <h2>Academic &amp; Professional Work</h2>
+
+        <ul class="cv-list">
+          <li>Written a supplementary English guide book intended for publication.</li>
+          <li>Completed research work as part of academic and professional development.</li>
+          <li>Participated in professional development related to English language teaching.</li>
+          <li>Participated in training related to pedagogy, assessment, and classroom management.</li>
+        </ul>
+      </article>
+
+    </div>
+
+    <aside class="cv-sidebar">
+
+      <div class="cv-download">
+        <div class="cv-kicker">CV Document</div>
+        <h2>Download the CV</h2>
+
+        <p>
+          A printable copy of my education, teaching experience,
+          professional responsibilities, skills, and recognition.
+        </p>
+
+        <a class="button" href="cv/derese-getaneh-woldemariam-cv.pdf" download>
+          Download PDF &darr;
+        </a>
+
+        <div class="cv-note">
+          PDF file stored in the portfolio's CV folder.
+        </div>
+      </div>
+
+      <div class="cv-card">
+        <div class="cv-kicker">Teaching Focus</div>
+        <h2>Teaching Approach</h2>
+
+        <ul class="cv-list">
+          <li>Student-centered teaching</li>
+          <li>Communicative approach</li>
+          <li>Real-life language use</li>
+          <li>English language learning</li>
+          <li>Student participation and development</li>
+        </ul>
+      </div>
+
+      <div class="cv-card">
+        <div class="cv-kicker">Teaching Experience</div>
+        <h2>Grade 12</h2>
+
+        <p>
+          I have taught English in Grade 12 for 18 years.
+        </p>
+      </div>
+
+      <div class="cv-card">
+        <div class="cv-kicker">Professional Development</div>
+        <h2>Areas of Development</h2>
+
+        <ul class="cv-list">
+          <li>English language teaching</li>
+          <li>Pedagogy</li>
+          <li>Assessment</li>
+          <li>Classroom management</li>
+          <li>ICT</li>
+          <li>Educational technology</li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+
+    <article class="cv-bottom">
+      <div class="cv-kicker">Professional Statement</div>
+
+      <h2>English Language Teacher</h2>
+
+      <p>
+        My work combines English language teaching with student support,
+        school responsibilities, and continued professional learning.
+      </p>
+    </article>
+
+  </div>
+</section></main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span>&copy; <span data-year></span> Derese Getaneh Woldemariam</span>
+    <span>English Language Teacher &middot; Debrebrehan</span>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

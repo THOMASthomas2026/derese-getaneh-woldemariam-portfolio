@@ -1,0 +1,564 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Publications | Derese Getaneh Woldemariam</title>
+<meta name="description" content="Written work and English language learning materials by Derese Getaneh Woldemariam.">
+<meta name="theme-color" content="#f3f0e8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navigation.css">
+<script defer src="js/config.js"></script>
+<script defer src="js/main.js"></script>
+
+<style>
+.publications-hero{
+  position:relative;
+  padding:100px 0 90px;
+  overflow:hidden;
+}
+
+.publications-hero:before{
+  content:"";
+  position:absolute;
+  width:460px;
+  height:460px;
+  border-radius:50%;
+  right:-170px;
+  top:-210px;
+  background:rgba(36,72,59,.07);
+}
+
+.publications-hero:after{
+  content:"";
+  position:absolute;
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  left:-100px;
+  bottom:-130px;
+  background:rgba(178,138,74,.08);
+}
+
+.publications-hero .wrap{
+  position:relative;
+  z-index:1;
+}
+
+.publications-hero h1{
+  max-width:900px;
+  margin:12px 0 20px;
+  font-size:clamp(2.8rem,6vw,5rem);
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+
+.publications-hero p{
+  max-width:760px;
+  font-size:1.08rem;
+  line-height:1.85;
+}
+
+.publications-section{
+  padding-top:25px;
+}
+
+.publication-intro{
+  max-width:780px;
+  margin-bottom:42px;
+}
+
+.publication-intro h2{
+  margin:8px 0 14px;
+}
+
+.publication-intro p{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.book-feature{
+  display:grid;
+  grid-template-columns:330px 1fr;
+  gap:0;
+  max-width:1000px;
+  margin:0 auto;
+  border-radius:26px;
+  overflow:hidden;
+  box-shadow:0 22px 55px rgba(23,35,31,.11);
+}
+
+.book-cover{
+  position:relative;
+  min-height:440px;
+  padding:32px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background:
+    radial-gradient(circle at 80% 15%,rgba(178,138,74,.25),transparent 25%),
+    linear-gradient(145deg,#24483b,#17342b);
+  color:#fff;
+  overflow:hidden;
+}
+
+.book-cover:before{
+  content:"";
+  position:absolute;
+  width:240px;
+  height:240px;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:50%;
+  right:-100px;
+  bottom:-80px;
+}
+
+.book-cover:after{
+  content:"";
+  position:absolute;
+  width:160px;
+  height:160px;
+  border:1px solid rgba(178,138,74,.25);
+  border-radius:50%;
+  left:-75px;
+  top:45%;
+}
+
+.book-mark{
+  position:relative;
+  z-index:1;
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  padding:7px 10px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  color:#e0ca95;
+  font-size:.7rem;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.book-symbol{
+  position:relative;
+  z-index:1;
+  width:80px;
+  height:80px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:50%;
+  font-family:Georgia,serif;
+  font-size:2rem;
+  color:#d9c28d;
+}
+
+.book-details{
+  position:relative;
+  z-index:1;
+}
+
+.book-details small{
+  display:block;
+  margin-bottom:9px;
+  color:rgba(255,255,255,.58);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.68rem;
+  font-weight:800;
+}
+
+.book-details h2{
+  margin:0;
+  color:#fff;
+  font-family:Georgia,serif;
+  font-size:2rem;
+}
+
+.book-content{
+  padding:42px;
+  background:var(--surface);
+}
+
+.book-content .kicker{
+  margin-bottom:8px;
+}
+
+.book-content h2{
+  margin:0 0 15px;
+  font-size:1.75rem;
+}
+
+.book-content > p{
+  margin:0;
+  max-width:650px;
+  color:var(--muted);
+  line-height:1.85;
+}
+
+.publication-meta{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:13px;
+  margin-top:28px;
+}
+
+.meta-item{
+  padding:17px;
+  border-radius:15px;
+  background:var(--soft);
+  border:1px solid rgba(36,72,59,.08);
+}
+
+.meta-item span{
+  display:block;
+  margin-bottom:5px;
+  color:var(--muted);
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-weight:800;
+}
+
+.meta-item strong{
+  color:var(--green);
+}
+
+.writing-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.writing-card{
+  padding:28px;
+  border-radius:20px;
+  border:1px solid var(--line);
+  background:var(--surface);
+}
+
+.writing-card .number{
+  color:var(--accent);
+  font-size:.75rem;
+  font-weight:900;
+  letter-spacing:.13em;
+}
+
+.writing-card h3{
+  margin:13px 0 10px;
+}
+
+.writing-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.72;
+}
+
+.author-panel{
+  display:grid;
+  grid-template-columns:.75fr 1.25fr;
+  gap:30px;
+  padding:38px;
+  border-radius:25px;
+  background:var(--green);
+  color:#fff;
+}
+
+.author-panel h2{
+  margin:7px 0 0;
+  color:#fff;
+}
+
+.author-panel .kicker{
+  color:#d9c28d;
+}
+
+.author-panel p{
+  margin:0;
+  color:rgba(255,255,255,.82);
+  line-height:1.85;
+}
+
+.author-panel strong{
+  color:#fff;
+}
+
+.publication-note{
+  margin-top:50px;
+  padding:42px;
+  text-align:center;
+  border-radius:25px;
+  background:var(--surface);
+  border:1px solid rgba(178,138,74,.28);
+}
+
+.publication-note h2{
+  max-width:750px;
+  margin:0 auto 13px;
+}
+
+.publication-note p{
+  max-width:700px;
+  margin:0 auto;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+@media(max-width:850px){
+  .book-feature,
+  .author-panel{
+    grid-template-columns:1fr;
+  }
+
+  .book-cover{
+    min-height:350px;
+  }
+
+  .writing-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:600px){
+  .publications-hero{
+    padding:72px 0 62px;
+  }
+
+  .publications-hero h1{
+    font-size:clamp(2.5rem,13vw,4rem);
+  }
+
+  .book-content,
+  .book-cover,
+  .author-panel,
+  .publication-note{
+    padding:28px;
+  }
+
+  .publication-meta{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Derese Getaneh</a>
+
+    <button class="menu" data-menu aria-label="Open navigation" aria-expanded="false">
+      Menu
+    </button>
+
+    <nav class="nav" data-nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a> <a href="academic-journey.html">Academic Journey</a>
+<a href="teaching.html">Teaching</a>
+<a href="research.html">Research</a>
+<a href="publications.html" class="active" aria-current="page">Publications</a>
+<a href="achievements.html">Achievements</a>
+<a href="projects.html">Projects</a>
+<a href="student-impact.html">Student Impact</a>
+<a href="legacy.html">Legacy</a>
+<a href="contact.html">Contact</a>
+<a href="cv.html">CV</a>
+<a class="platform" data-platform href="#">Teacher Platform &rarr;</a></nav>
+</div>
+</header>
+
+<main id="main">
+
+<section class="publications-hero">
+  <div class="wrap">
+    <div class="kicker">Written Work</div>
+    <h1>Writing materials that support English language learning.</h1>
+    <p>
+      Alongside teaching, I have written educational material that can be used
+      to support students as they learn English. Writing gives me a way to
+      organize ideas, explain language clearly, and prepare resources that
+      students can use alongside their regular lessons.
+    </p>
+  </div>
+</section>
+
+<section class="publications-section">
+  <div class="wrap">
+
+    <div class="publication-intro">
+      <div class="kicker">Featured Work</div>
+      <h2>A supplementary English guide book.</h2>
+      <p>
+        One of my written educational resources is a supplementary English
+        guide book. I developed it as an additional resource that students
+        can use to study and practise English alongside their regular
+        classroom work.
+      </p>
+    </div>
+
+    <article class="book-feature">
+
+      <div class="book-cover">
+        <div class="book-mark">English Language</div>
+
+        <div class="book-symbol" aria-hidden="true">E</div>
+
+        <div class="book-details">
+          <small>Written educational material</small>
+          <h2>Supplementary English Guide</h2>
+        </div>
+      </div>
+
+      <div class="book-content">
+        <div class="kicker">Written Resource</div>
+        <h2>Supplementary English Guide Book</h2>
+
+        <p>
+          I wrote this supplementary English guide book as part of my work
+          in English language education. The aim is to provide students with
+          additional material they can use when studying and practising
+          English beyond the regular lesson.
+        </p>
+
+        <div class="publication-meta">
+          <div class="meta-item">
+            <span>Type</span>
+            <strong>English learning guide</strong>
+          </div>
+
+          <div class="meta-item">
+            <span>Author</span>
+            <strong>Derese Getaneh Woldemariam</strong>
+          </div>
+
+          <div class="meta-item">
+            <span>Purpose</span>
+            <strong>Supplementary learning</strong>
+          </div>
+
+          <div class="meta-item">
+            <span>Focus</span>
+            <strong>English language education</strong>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+<section class="publications-section">
+  <div class="wrap">
+
+    <div class="publication-intro">
+      <div class="kicker">Writing Perspective</div>
+      <h2>My classroom experience influences what I write.</h2>
+      <p>
+        Teaching gives me a clear sense of the areas where students need
+        explanation, practice, and additional support. Writing allows me to
+        turn some of that experience into learning material that students
+        can return to outside the classroom.
+      </p>
+    </div>
+
+    <div class="writing-grid">
+
+      <article class="writing-card">
+        <div class="number">01 / LEARNING</div>
+        <h3>Giving students more to practise with</h3>
+        <p>
+          A learning guide can give students material they can return to
+          after a lesson. I see written resources as a way of giving learners
+          additional opportunities to review language and practise what they
+          have studied.
+        </p>
+      </article>
+
+      <article class="writing-card">
+        <div class="number">02 / PRACTICE</div>
+        <h3>Writing from classroom experience</h3>
+        <p>
+          The questions students ask and the difficulties they encounter in
+          learning English can influence the kind of material I prepare.
+          Classroom teaching therefore gives me practical experience to draw
+          on when I write.
+        </p>
+      </article>
+
+      <article class="writing-card">
+        <div class="number">03 / CONTRIBUTION</div>
+        <h3>Sharing what I have prepared</h3>
+        <p>
+          Writing allows the work I prepare as a teacher to take a form that
+          can be used beyond a single classroom lesson. A guide book can give
+          students another place to review ideas and continue their study.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="publications-section">
+  <div class="wrap">
+
+    <div class="author-panel">
+      <div>
+        <div class="kicker">Author</div>
+        <h2>Derese Getaneh Woldemariam</h2>
+      </div>
+
+      <p>
+        <strong>English Language Teacher</strong><br>
+        My work brings together teaching, professional learning, research,
+        and educational writing. Writing is one way I can organize what I
+        have learned through teaching and prepare material that supports
+        English language learning.
+      </p>
+    </div>
+
+    <div class="publication-note">
+      <h2>Teaching experience can become a resource for learners.</h2>
+      <p>
+        The supplementary guide book is one way I have turned what I know
+        from teaching and working with English language learners into
+        additional study material. It brings together my experience as a
+        teacher and my interest in preparing resources that students can use
+        when they need extra practice.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span>&copy; <span data-year></span> Derese Getaneh Woldemariam</span>
+    <span>English Language Teacher &middot; Debrebrehan</span>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+Place approved gallery images here.

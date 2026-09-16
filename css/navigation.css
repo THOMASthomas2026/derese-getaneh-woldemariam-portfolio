@@ -1,0 +1,318 @@
+﻿/* =========================================================
+   GLOBAL NAVIGATION — CLEAN FINAL VERSION
+   ========================================================= */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ================= HEADER ================= */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+  height: 82px;
+  box-sizing: border-box;
+
+  background: rgba(243, 240, 232, .88);
+  backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid rgba(36, 72, 59, .14);
+  box-shadow: 0 4px 24px rgba(23, 35, 31, .05);
+}
+
+header .wrap.bar {
+  width: min(var(--max), calc(100% - 28px));
+  height: 82px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* ================= BRAND ================= */
+
+header .brand {
+  flex: 0 0 auto;
+
+  width: 150px;
+  min-width: 150px;
+
+  margin: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  text-decoration: none;
+
+  font-family: "Libre Baskerville", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: var(--green);
+}
+
+header .brand:hover {
+  color: var(--accent);
+}
+
+/* ================= MENU ================= */
+
+header .menu {
+  display: none;
+
+  flex: 0 0 auto;
+
+  margin-left: auto;
+  padding: 8px 12px;
+
+  background: transparent;
+  border: 1px solid var(--line);
+
+  color: var(--ink);
+  font: inherit;
+
+  cursor: pointer;
+}
+
+/* ================= NAV ================= */
+
+header .nav {
+  flex: 1 1 auto;
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: clamp(7px, 1vw, 15px);
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+header .nav a {
+  flex: 0 0 auto;
+
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  text-decoration: none;
+
+  font-size: clamp(.60rem, .72vw, .78rem);
+  font-weight: 500;
+  line-height: 1.2;
+
+  color: #405049;
+}
+
+header .nav a:hover {
+  color: var(--green);
+}
+
+/* ================= ACTIVE ================= */
+
+header .nav a.active,
+header .nav a[aria-current="page"] {
+  color: var(--green);
+}
+
+header .nav a:not(.platform)::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 1px;
+
+  background: var(--accent);
+}
+
+header .nav a:not(.platform):hover::after,
+header .nav a:not(.platform).active::after,
+header .nav a:not(.platform)[aria-current="page"]::after {
+  width: 100%;
+}
+
+/* ================= PLATFORM ================= */
+
+header .nav .platform {
+  flex: 0 0 auto;
+
+  padding: 7px 9px;
+
+  color: #fff;
+  background: var(--green);
+
+  border: 1px solid var(--green);
+  border-radius: 3px;
+
+  white-space: nowrap;
+}
+
+header .nav .platform:hover {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+header .nav .platform::after {
+  display: none;
+}
+
+/* =========================================================
+   TABLET
+   701px — 999px
+   FULL NAVIGATION, HORIZONTALLY SCROLLABLE
+   ========================================================= */
+
+@media (min-width: 701px) and (max-width: 999px) {
+
+  header .wrap.bar {
+    gap: 14px;
+  }
+
+  header .brand {
+    width: 135px;
+    min-width: 135px;
+    font-size: .92rem;
+  }
+
+  header .nav {
+    justify-content: flex-start;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    flex-wrap: nowrap;
+
+    padding-bottom: 4px;
+
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  header .nav a {
+    font-size: .70rem;
+  }
+
+  header .nav .platform {
+    flex: 0 0 auto;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   700px AND BELOW
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  header {
+    height: 76px;
+  }
+
+  header .wrap.bar {
+    width: calc(100% - 28px);
+    height: 76px;
+  }
+
+  header .brand {
+    width: auto;
+    min-width: 0;
+    max-width: 220px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  header .menu {
+    display: block;
+  }
+
+  header .nav {
+    display: none;
+
+    position: absolute;
+
+    top: 76px;
+    left: 14px;
+    right: 14px;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0;
+
+    padding: 16px;
+
+    max-height: calc(100vh - 92px);
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: var(--paper);
+
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  header .nav.is-open {
+    display: flex;
+  }
+
+  header .nav a {
+    width: 100%;
+
+    padding: 9px 2px;
+
+    font-size: .86rem;
+  }
+
+  header .nav .platform {
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  body.menu-open {
+    overflow: hidden;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 380px) {
+
+  header .wrap.bar {
+    width: calc(100% - 22px);
+  }
+
+  header .brand {
+    max-width: 180px;
+  }
+
+  header .nav {
+    left: 10px;
+    right: 10px;
+    padding: 14px;
+  }
+}

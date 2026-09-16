@@ -1,0 +1,698 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projects | Derese Getaneh Woldemariam</title>
+<meta name="description" content="Educational projects, school initiatives, English Club participation, and community-oriented work by Derese Getaneh Woldemariam.">
+<meta name="theme-color" content="#f3f0e8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navigation.css">
+<script defer src="js/config.js"></script>
+<script defer src="js/main.js"></script>
+
+<style>
+.projects-hero{
+  position:relative;
+  padding:100px 0 90px;
+  overflow:hidden;
+}
+
+.projects-hero:before{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  border-radius:50%;
+  right:-230px;
+  top:-270px;
+  background:rgba(36,72,59,.075);
+}
+
+.projects-hero:after{
+  content:"";
+  position:absolute;
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  left:-135px;
+  bottom:-150px;
+  background:rgba(178,138,74,.09);
+}
+
+.projects-hero .wrap{
+  position:relative;
+  z-index:1;
+}
+
+.projects-hero h1{
+  max-width:920px;
+  margin:12px 0 20px;
+  font-size:clamp(2.8rem,6vw,5rem);
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+
+.projects-hero p{
+  max-width:770px;
+  color:var(--muted);
+  font-size:1.08rem;
+  line-height:1.85;
+}
+
+.project-section{
+  padding-top:25px;
+}
+
+.project-intro{
+  max-width:790px;
+  margin-bottom:42px;
+}
+
+.project-intro h2{
+  margin:8px 0 14px;
+}
+
+.project-intro p{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.feature-project{
+  display:grid;
+  grid-template-columns:1fr 1.35fr;
+  gap:0;
+  overflow:hidden;
+  border-radius:27px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  box-shadow:0 24px 60px rgba(23,35,31,.1);
+}
+
+.project-visual{
+  position:relative;
+  min-height:470px;
+  padding:38px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background:
+    radial-gradient(circle at 80% 15%,rgba(178,138,74,.25),transparent 28%),
+    linear-gradient(145deg,#24483b,#17342b);
+  color:#fff;
+  overflow:hidden;
+}
+
+.project-visual:before,
+.project-visual:after{
+  content:"";
+  position:absolute;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:50%;
+}
+
+.project-visual:before{
+  width:340px;
+  height:340px;
+  right:-170px;
+  bottom:-170px;
+}
+
+.project-visual:after{
+  width:190px;
+  height:190px;
+  left:-95px;
+  top:38%;
+  border-color:rgba(178,138,74,.24);
+}
+
+.project-tag{
+  position:relative;
+  z-index:1;
+  width:max-content;
+  padding:8px 12px;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:999px;
+  color:#dfcb91;
+  font-size:.68rem;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.project-number{
+  position:relative;
+  z-index:1;
+  width:92px;
+  height:92px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:50%;
+  font-family:Georgia,serif;
+  font-size:2rem;
+  color:#fff;
+}
+
+.project-visual-bottom{
+  position:relative;
+  z-index:1;
+}
+
+.project-visual-bottom small{
+  display:block;
+  margin-bottom:8px;
+  color:rgba(255,255,255,.56);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.68rem;
+  font-weight:800;
+}
+
+.project-visual-bottom strong{
+  display:block;
+  max-width:330px;
+  font-family:Georgia,serif;
+  font-size:1.65rem;
+  line-height:1.2;
+}
+
+.project-details{
+  padding:45px;
+}
+
+.project-details .kicker{
+  margin-bottom:8px;
+}
+
+.project-details h2{
+  max-width:650px;
+  margin:0 0 18px;
+  font-size:2rem;
+  line-height:1.15;
+}
+
+.project-details > p{
+  color:var(--muted);
+  line-height:1.85;
+  margin:0;
+}
+
+.project-facts{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  margin-top:30px;
+}
+
+.project-fact{
+  padding:18px;
+  border-radius:16px;
+  background:var(--soft);
+}
+
+.project-fact span{
+  display:block;
+  margin-bottom:6px;
+  color:var(--muted);
+  font-size:.68rem;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.project-fact strong{
+  color:var(--green);
+}
+
+.project-outcomes{
+  margin-top:34px;
+  padding-top:27px;
+  border-top:1px solid var(--line);
+}
+
+.project-outcomes h3{
+  margin:0 0 16px;
+  font-size:1.05rem;
+}
+
+.outcome-list{
+  display:grid;
+  gap:11px;
+}
+
+.outcome{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  color:var(--muted);
+  line-height:1.65;
+}
+
+.outcome-mark{
+  flex:0 0 24px;
+  width:24px;
+  height:24px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:var(--green);
+  color:#fff;
+  font-size:.72rem;
+  font-weight:900;
+}
+
+.initiative-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:19px;
+}
+
+.initiative-card{
+  position:relative;
+  padding:30px;
+  border-radius:21px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  overflow:hidden;
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+
+.initiative-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 42px rgba(23,35,31,.08);
+}
+
+.initiative-card:after{
+  content:"";
+  position:absolute;
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  right:-55px;
+  bottom:-55px;
+  background:rgba(36,72,59,.045);
+}
+
+.initiative-number{
+  position:relative;
+  z-index:1;
+  color:var(--accent);
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.14em;
+}
+
+.initiative-icon{
+  position:relative;
+  z-index:1;
+  width:50px;
+  height:50px;
+  margin:23px 0 19px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:15px;
+  background:var(--green);
+  color:#fff;
+  font-family:Georgia,serif;
+  font-size:1.2rem;
+}
+
+.initiative-card h3{
+  position:relative;
+  z-index:1;
+  margin:0 0 10px;
+}
+
+.initiative-card p{
+  position:relative;
+  z-index:1;
+  margin:0;
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.project-principles{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:28px;
+  margin-top:48px;
+  padding:40px;
+  border-radius:25px;
+  background:var(--green);
+  color:#fff;
+}
+
+.project-principles h2{
+  margin:8px 0 0;
+  color:#fff;
+}
+
+.project-principles .kicker{
+  color:#ddc98e;
+}
+
+.principle-list{
+  display:grid;
+  gap:14px;
+}
+
+.principle{
+  padding:18px 20px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:16px;
+  background:rgba(255,255,255,.045);
+}
+
+.principle strong{
+  display:block;
+  margin-bottom:5px;
+  color:#fff;
+}
+
+.principle span{
+  color:rgba(255,255,255,.72);
+  line-height:1.6;
+}
+
+.project-closing{
+  margin-top:48px;
+  padding:45px 30px;
+  text-align:center;
+  border-radius:25px;
+  background:var(--surface);
+  border:1px solid rgba(178,138,74,.3);
+}
+
+.project-closing h2{
+  max-width:760px;
+  margin:0 auto 14px;
+}
+
+.project-closing p{
+  max-width:700px;
+  margin:0 auto;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+@media(max-width:900px){
+  .feature-project,
+  .project-principles{
+    grid-template-columns:1fr;
+  }
+
+  .initiative-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:650px){
+  .projects-hero{
+    padding:72px 0 62px;
+  }
+
+  .projects-hero h1{
+    font-size:clamp(2.5rem,13vw,4rem);
+  }
+
+  .initiative-grid,
+  .project-facts{
+    grid-template-columns:1fr;
+  }
+
+  .project-details,
+  .project-visual,
+  .project-principles,
+  .project-closing{
+    padding:28px;
+  }
+
+  .project-visual{
+    min-height:390px;
+  }
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Derese Getaneh</a>
+
+    <button class="menu" data-menu aria-label="Open navigation" aria-expanded="false">
+      Menu
+    </button>
+
+    <nav class="nav" data-nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a> <a href="academic-journey.html">Academic Journey</a>
+<a href="teaching.html">Teaching</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="achievements.html">Achievements</a>
+<a href="projects.html" class="active" aria-current="page">Projects</a>
+<a href="student-impact.html">Student Impact</a>
+<a href="legacy.html">Legacy</a>
+<a href="contact.html">Contact</a>
+<a href="cv.html">CV</a>
+<a class="platform" data-platform href="#">Teacher Platform &rarr;</a></nav>
+</div>
+</header>
+
+<main id="main">
+
+<section class="projects-hero">
+  <div class="wrap">
+    <div class="kicker">Educational Projects</div>
+    <h1>Projects connected to teaching, students, and school life.</h1>
+    <p>
+      My project work has included activities aimed at improving the school
+      environment, supporting English language learning, taking part in
+      community activities, and continuing my own professional development.
+      These projects are connected to the practical work I do as a teacher.
+    </p>
+  </div>
+</section>
+
+<section class="project-section">
+  <div class="wrap">
+
+    <div class="project-intro">
+      <div class="kicker">Featured Project</div>
+      <h2>Improving the school environment.</h2>
+      <p>
+        One of my documented projects focused on making the school
+        environment more beautiful and comfortable for the teaching-learning
+        process.
+      </p>
+    </div>
+
+    <article class="feature-project">
+
+      <div class="project-visual">
+        <div class="project-tag">School Improvement</div>
+
+        <div class="project-number">01</div>
+
+        <div class="project-visual-bottom">
+          <small>Project Focus</small>
+          <strong>
+            A better environment for teaching and learning.
+          </strong>
+        </div>
+      </div>
+
+      <div class="project-details">
+        <div class="kicker">Shewarobit General Secondary School</div>
+
+        <h2>
+          Making the school beautiful and comfortable for the
+          teaching-learning process.
+        </h2>
+
+        <p>
+          This school improvement project focused on making the surroundings
+          at Shewarobit General Secondary School more beautiful and
+          comfortable for students and teachers. The project was connected
+          with the everyday environment in which teaching and learning take
+          place.
+        </p>
+
+        <div class="project-facts">
+          <div class="project-fact">
+            <span>Setting</span>
+            <strong>School environment</strong>
+          </div>
+
+          <div class="project-fact">
+            <span>Purpose</span>
+            <strong>Support teaching and learning</strong>
+          </div>
+
+          <div class="project-fact">
+            <span>School</span>
+            <strong>Shewarobit G.S. School</strong>
+          </div>
+
+          <div class="project-fact">
+            <span>Area</span>
+            <strong>Educational improvement</strong>
+          </div>
+        </div>
+
+        <div class="project-outcomes">
+          <h3>Project direction</h3>
+
+          <div class="outcome-list">
+            <div class="outcome">
+              <span class="outcome-mark">&#10003;</span>
+              <span>Helping create a more comfortable environment for students and teachers.</span>
+            </div>
+
+            <div class="outcome">
+              <span class="outcome-mark">&#10003;</span>
+              <span>Taking part in activities connected with improving the school environment.</span>
+            </div>
+
+            <div class="outcome">
+              <span class="outcome-mark">&#10003;</span>
+              <span>Supporting an environment where teaching and learning can take place comfortably.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+<section class="project-section">
+  <div class="wrap">
+
+    <div class="project-intro">
+      <div class="kicker">Additional Initiatives</div>
+      <h2>Other activities connected with my work as a teacher.</h2>
+      <p>
+        The school improvement project is one part of my wider work. I have
+        also participated in the English Club, educational and
+        community-oriented activities, and professional development related
+        to English teaching.
+      </p>
+    </div>
+
+    <div class="initiative-grid">
+
+      <article class="initiative-card">
+        <div class="initiative-number">01 / ENGLISH</div>
+        <div class="initiative-icon">E</div>
+        <h3>English Club</h3>
+        <p>
+          I have supported and participated in the English Club at school,
+          giving students another setting in which to practise English and
+          take part in activities beyond regular classroom lessons.
+        </p>
+      </article>
+
+      <article class="initiative-card">
+        <div class="initiative-number">02 / COMMUNITY</div>
+        <div class="initiative-icon">C</div>
+        <h3>Community Activities</h3>
+        <p>
+          I have taken part in educational and community-oriented activities
+          connected with learning and participation in the wider community.
+        </p>
+      </article>
+
+      <article class="initiative-card">
+        <div class="initiative-number">03 / PROFESSIONAL</div>
+        <div class="initiative-icon">P</div>
+        <h3>Professional Development</h3>
+        <p>
+          I have continued to take part in professional development related
+          to English teaching, pedagogy, assessment, and classroom management.
+          These areas connect directly with the work I do in school.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="project-principles">
+
+      <div>
+        <div class="kicker">Project Principles</div>
+        <h2>I try to keep project work connected to real school needs.</h2>
+      </div>
+
+      <div class="principle-list">
+
+        <div class="principle">
+          <strong>Learning first</strong>
+          <span>
+            I try to keep activities connected to the everyday needs of
+            teaching and learning.
+          </span>
+        </div>
+
+        <div class="principle">
+          <strong>Participation</strong>
+          <span>
+            Projects work better when teachers, students, and others involved
+            in school activities take part and contribute where they can.
+          </span>
+        </div>
+
+        <div class="principle">
+          <strong>Positive environment</strong>
+          <span>
+            The physical and social environment of a school can affect how
+            comfortably students and teachers take part in learning.
+          </span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="project-closing">
+      <h2>Some of my work as a teacher happens outside the regular lesson.</h2>
+      <p>
+        School projects, English Club activities, professional development,
+        and community-oriented work have given me different ways to support
+        students and take part in school life. They are part of the broader
+        responsibilities that come with being a teacher.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span>&copy; <span data-year></span> Derese Getaneh Woldemariam</span>
+    <span>English Language Teacher &middot; Debrebrehan</span>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

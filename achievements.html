@@ -1,0 +1,658 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Achievements | Derese Getaneh Woldemariam</title>
+<meta name="description" content="Professional achievements, recognition, certificates, and contributions of English Language Teacher Derese Getaneh Woldemariam.">
+<meta name="theme-color" content="#f3f0e8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navigation.css">
+<script defer src="js/config.js"></script>
+<script defer src="js/main.js"></script>
+
+<style>
+.achievements-hero{
+  position:relative;
+  padding:100px 0 90px;
+  overflow:hidden;
+}
+
+.achievements-hero:before{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  border-radius:50%;
+  right:-220px;
+  top:-260px;
+  background:rgba(36,72,59,.075);
+}
+
+.achievements-hero:after{
+  content:"";
+  position:absolute;
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  left:-130px;
+  bottom:-150px;
+  background:rgba(178,138,74,.09);
+}
+
+.achievements-hero .wrap{
+  position:relative;
+  z-index:1;
+}
+
+.achievements-hero h1{
+  max-width:920px;
+  margin:12px 0 20px;
+  font-size:clamp(2.8rem,6vw,5rem);
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+
+.achievements-hero p{
+  max-width:760px;
+  color:var(--muted);
+  font-size:1.08rem;
+  line-height:1.85;
+}
+
+.achievement-section{
+  padding-top:25px;
+}
+
+.achievement-intro{
+  max-width:790px;
+  margin-bottom:42px;
+}
+
+.achievement-intro h2{
+  margin:8px 0 14px;
+}
+
+.achievement-intro p{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.recognition-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:20px;
+}
+
+.recognition-card{
+  position:relative;
+  min-height:280px;
+  padding:30px;
+  border-radius:22px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  overflow:hidden;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+
+.recognition-card:hover{
+  transform:translateY(-7px);
+  border-color:rgba(178,138,74,.45);
+  box-shadow:0 20px 45px rgba(23,35,31,.09);
+}
+
+.recognition-card:after{
+  content:"";
+  position:absolute;
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  right:-55px;
+  bottom:-55px;
+  background:rgba(36,72,59,.05);
+}
+
+.recognition-number{
+  position:relative;
+  z-index:1;
+  color:var(--accent);
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.14em;
+}
+
+.recognition-icon{
+  position:relative;
+  z-index:1;
+  width:52px;
+  height:52px;
+  margin:25px 0 20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:15px;
+  background:var(--green);
+  color:#fff;
+  font-family:Georgia,serif;
+  font-size:1.25rem;
+}
+
+.recognition-card h3{
+  position:relative;
+  z-index:1;
+  margin:0 0 11px;
+}
+
+.recognition-card p{
+  position:relative;
+  z-index:1;
+  margin:0;
+  color:var(--muted);
+  line-height:1.72;
+}
+
+.model-teacher{
+  margin-top:48px;
+  display:grid;
+  grid-template-columns:1fr 1.35fr;
+  gap:0;
+  overflow:hidden;
+  border-radius:26px;
+  background:var(--green);
+  box-shadow:0 25px 60px rgba(23,35,31,.12);
+}
+
+.model-side{
+  position:relative;
+  min-height:330px;
+  padding:38px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  background:
+    radial-gradient(circle at 85% 20%,rgba(178,138,74,.22),transparent 30%),
+    linear-gradient(145deg,#24483b,#17342b);
+  color:#fff;
+  overflow:hidden;
+}
+
+.model-side:before,
+.model-side:after{
+  content:"";
+  position:absolute;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:50%;
+}
+
+.model-side:before{
+  width:280px;
+  height:280px;
+  right:-145px;
+  bottom:-140px;
+}
+
+.model-side:after{
+  width:150px;
+  height:150px;
+  left:-75px;
+  top:35%;
+  border-color:rgba(178,138,74,.25);
+}
+
+.model-label{
+  position:relative;
+  z-index:1;
+  color:#ddc98e;
+  font-size:.72rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+}
+
+.model-badge{
+  position:relative;
+  z-index:1;
+  width:105px;
+  height:105px;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-family:Georgia,serif;
+  font-size:1.05rem;
+  color:#fff;
+}
+
+.model-content{
+  padding:44px;
+  background:var(--surface);
+}
+
+.model-content .kicker{
+  margin-bottom:8px;
+}
+
+.model-content h2{
+  margin:0 0 17px;
+  font-size:2rem;
+}
+
+.model-content p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.85;
+}
+
+.model-facts{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:13px;
+  margin-top:27px;
+}
+
+.model-fact{
+  padding:17px;
+  border-radius:15px;
+  background:var(--soft);
+}
+
+.model-fact span{
+  display:block;
+  margin-bottom:6px;
+  color:var(--muted);
+  font-size:.7rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+
+.model-fact strong{
+  color:var(--green);
+}
+
+.certificate-panel{
+  margin-top:48px;
+  padding:38px;
+  border:1px solid var(--line);
+  border-radius:25px;
+  background:var(--surface);
+}
+
+.certificate-panel h2{
+  margin:8px 0 14px;
+}
+
+.certificate-panel > p{
+  max-width:780px;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.certificate-list{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  margin-top:28px;
+}
+
+.certificate-item{
+  padding:20px;
+  border-radius:16px;
+  background:var(--soft);
+  border-left:3px solid var(--accent);
+}
+
+.certificate-item strong{
+  color:var(--green);
+}
+
+.contribution-section{
+  margin-top:48px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+}
+
+.contribution-card{
+  padding:32px;
+  border-radius:22px;
+  background:var(--surface);
+  border:1px solid var(--line);
+}
+
+.contribution-card.dark{
+  background:var(--green);
+  color:#fff;
+  border-color:var(--green);
+}
+
+.contribution-card h3{
+  margin:8px 0 12px;
+}
+
+.contribution-card.dark h3{
+  color:#fff;
+}
+
+.contribution-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.contribution-card.dark p{
+  color:rgba(255,255,255,.78);
+}
+
+.final-achievement{
+  margin-top:48px;
+  padding:45px 30px;
+  text-align:center;
+  border-radius:25px;
+  background:
+    linear-gradient(rgba(36,72,59,.96),rgba(36,72,59,.96)),
+    radial-gradient(circle at center,rgba(178,138,74,.2),transparent 50%);
+}
+
+.final-achievement .kicker{
+  color:#ddc98e;
+}
+
+.final-achievement h2{
+  max-width:760px;
+  margin:8px auto 14px;
+  color:#fff;
+}
+
+.final-achievement p{
+  max-width:700px;
+  margin:0 auto;
+  color:rgba(255,255,255,.78);
+  line-height:1.8;
+}
+
+@media(max-width:900px){
+  .recognition-grid,
+  .certificate-list{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .model-teacher{
+    grid-template-columns:1fr;
+  }
+
+  .contribution-section{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:650px){
+  .achievements-hero{
+    padding:72px 0 62px;
+  }
+
+  .achievements-hero h1{
+    font-size:clamp(2.5rem,13vw,4rem);
+  }
+
+  .recognition-grid,
+  .certificate-list,
+  .model-facts{
+    grid-template-columns:1fr;
+  }
+
+  .model-content,
+  .model-side,
+  .certificate-panel,
+  .contribution-card{
+    padding:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Derese Getaneh</a>
+
+    <button class="menu" data-menu aria-label="Open navigation" aria-expanded="false">
+      Menu
+    </button>
+
+    <nav class="nav" data-nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a> <a href="academic-journey.html">Academic Journey</a>
+<a href="teaching.html">Teaching</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="achievements.html" class="active" aria-current="page">Achievements</a>
+<a href="projects.html">Projects</a>
+<a href="student-impact.html">Student Impact</a>
+<a href="legacy.html">Legacy</a>
+<a href="contact.html">Contact</a>
+<a href="cv.html">CV</a>
+<a class="platform" data-platform href="#">Teacher Platform &rarr;</a></nav>
+</div>
+</header>
+
+<main id="main">
+
+<section class="achievements-hero">
+  <div class="wrap">
+    <div class="kicker">Professional Recognition</div>
+    <h1>Recognition from my years of teaching and school service.</h1>
+    <p>
+      Over the course of my teaching career, I have taken on school
+      leadership and coordination responsibilities, contributed to school
+      and community activities, received certificates of recognition, and
+      was selected as a Model Teacher in North Shoa Zone in 2014 E.C.
+    </p>
+  </div>
+</section>
+
+<section class="achievement-section">
+  <div class="wrap">
+
+    <div class="achievement-intro">
+      <div class="kicker">Selected Achievements</div>
+      <h2>Recognition connected to teaching, service, and responsibility.</h2>
+      <p>
+        The recognition on this page represents different parts of my work
+        as a teacher. It includes my selection as a Model Teacher, certificates
+        received through my professional work, and the responsibilities I have
+        taken on in support of students and school activities.
+      </p>
+    </div>
+
+    <div class="recognition-grid">
+
+      <article class="recognition-card">
+        <div class="recognition-number">01 / RECOGNITION</div>
+        <div class="recognition-icon">M</div>
+        <h3>Model Teacher</h3>
+        <p>
+          In 2014 E.C., I was selected as a Model Teacher in North Shoa
+          Zone. This recognition is an important part of my teaching
+          experience and professional record.
+        </p>
+      </article>
+
+      <article class="recognition-card">
+        <div class="recognition-number">02 / CERTIFICATES</div>
+        <div class="recognition-icon">C</div>
+        <h3>Professional Certificates</h3>
+        <p>
+          I have received certificates of recognition from educational
+          institutions and offices connected with my professional work.
+          These certificates form part of the recognition I have received
+          during my teaching career.
+        </p>
+      </article>
+
+      <article class="recognition-card">
+        <div class="recognition-number">03 / SERVICE</div>
+        <div class="recognition-icon">S</div>
+        <h3>Educational Service</h3>
+        <p>
+          My work at school has included leadership, student advising,
+          coordination, and volunteer activities. These responsibilities
+          have been part of my wider contribution alongside classroom
+          teaching.
+        </p>
+      </article>
+
+    </div>
+
+    <article class="model-teacher">
+
+      <div class="model-side">
+        <div class="model-label">Professional Recognition</div>
+
+        <div class="model-badge">
+          Model<br>Teacher
+        </div>
+
+        <div class="model-label">North Shoa Zone · 2014 E.C.</div>
+      </div>
+
+      <div class="model-content">
+        <div class="kicker">A Significant Milestone</div>
+        <h2>Recognition as a Model Teacher</h2>
+
+        <p>
+          In 2014 E.C., I was selected as a Model Teacher in North Shoa
+          Zone. I consider this recognition an important part of my record
+          as an English language teacher and of the work I had done in
+          teaching and supporting students.
+        </p>
+
+        <div class="model-facts">
+          <div class="model-fact">
+            <span>Recognition</span>
+            <strong>Model Teacher</strong>
+          </div>
+
+          <div class="model-fact">
+            <span>Area</span>
+            <strong>North Shoa Zone</strong>
+          </div>
+
+          <div class="model-fact">
+            <span>Year</span>
+            <strong>2014 E.C.</strong>
+          </div>
+
+          <div class="model-fact">
+            <span>Field</span>
+            <strong>English Language Teaching</strong>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+<section class="achievement-section">
+  <div class="wrap">
+
+    <div class="certificate-panel">
+      <div class="kicker">Certificates & Recognition</div>
+      <h2>Certificates connected to my professional work.</h2>
+
+      <p>
+        I have received certificates of recognition through my professional
+        work as a teacher. They are part of the record of recognition and
+        professional service described on this page.
+      </p>
+
+      <div class="certificate-list">
+
+        <div class="certificate-item">
+          <strong>Shewarobit General Secondary School</strong>
+        </div>
+
+        <div class="certificate-item">
+          <strong>Debrebrehan University</strong>
+        </div>
+
+        <div class="certificate-item">
+          <strong>North Shoa Education Office</strong>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="contribution-section">
+
+      <article class="contribution-card">
+        <div class="kicker">Professional Contribution</div>
+        <h3>Leadership beyond the classroom.</h3>
+        <p>
+          My responsibilities have included serving as department head,
+          unit leader, minimedia coordinator, project designer, homeroom
+          teacher, and school management member. I have also been involved
+          in school communication through my work with the school's
+          Facebook page.
+        </p>
+      </article>
+
+      <article class="contribution-card dark">
+        <div class="kicker">Community Contribution</div>
+        <h3>Participation in school activities.</h3>
+        <p>
+          Throughout my teaching experience, I have taken part in school
+          activities as well as educational and community-oriented work.
+          These activities have given me opportunities to support students
+          and contribute outside my regular classroom responsibilities.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="final-achievement">
+      <div class="kicker">Professional Values</div>
+      <h2>Committed. Optimistic. Collaborative.</h2>
+      <p>
+        These are the values I try to bring to my teaching and my
+        responsibilities at school. I aim to remain committed to the work
+        I take on, stay positive when challenges arise, and work
+        collaboratively with colleagues and students.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span>&copy; <span data-year></span> Derese Getaneh Woldemariam</span>
+    <span>English Language Teacher &middot; Debrebrehan</span>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

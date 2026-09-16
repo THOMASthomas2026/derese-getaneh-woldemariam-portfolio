@@ -1,0 +1,489 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Contact | Derese Getaneh Woldemariam</title>
+
+<meta name="description" content="Contact Derese Getaneh Woldemariam, English Language Teacher.">
+
+<meta name="theme-color" content="#f3f0e8">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navigation.css">
+<script defer src="js/config.js"></script>
+<script defer src="js/main.js"></script>
+
+<style>
+.contact-hero{
+  position:relative;
+  padding:70px 0 45px;
+}
+
+.contact-hero-box{
+  position:relative;
+  overflow:hidden;
+  padding:55px;
+  border:1px solid rgba(36,72,59,.14);
+  background:
+    linear-gradient(135deg,rgba(255,254,250,.96),rgba(231,238,232,.9));
+  box-shadow:0 22px 60px rgba(23,35,31,.08);
+}
+
+.contact-hero-box:after{
+  content:"";
+  position:absolute;
+  width:280px;
+  height:280px;
+  right:-100px;
+  top:-120px;
+  border-radius:50%;
+  background:rgba(178,138,74,.12);
+}
+
+.contact-hero-box > *{
+  position:relative;
+  z-index:1;
+}
+
+.contact-hero-box h1{
+  margin:10px 0 15px;
+  max-width:750px;
+  font:700 clamp(2.7rem,6vw,5rem)/1.05 "Libre Baskerville",serif;
+  letter-spacing:-.05em;
+}
+
+.contact-hero-box p{
+  max-width:700px;
+  margin:0;
+  color:var(--muted);
+  font-size:1.08rem;
+}
+
+.contact-layout{
+  display:grid;
+  grid-template-columns:.82fr 1.18fr;
+  gap:22px;
+  align-items:stretch;
+}
+
+.contact-info{
+  padding:38px;
+  background:var(--green);
+  color:#fff;
+  border:0;
+}
+
+.contact-info h2{
+  margin:0 0 28px;
+  font:700 1.7rem/1.3 "Libre Baskerville",serif;
+}
+
+.contact-item{
+  padding:18px 0;
+  border-top:1px solid rgba(255,255,255,.16);
+}
+
+.contact-item:first-of-type{
+  border-top:0;
+}
+
+.contact-item .kicker{
+  color:#d8bb83;
+  margin-bottom:5px;
+}
+
+.contact-item a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.contact-item a:hover{
+  color:#e1c88f;
+}
+
+.contact-form-card{
+  padding:38px;
+}
+
+.contact-form-card h2{
+  margin:0 0 8px;
+  font:700 1.7rem/1.3 "Libre Baskerville",serif;
+}
+
+.contact-form-intro{
+  margin:0 0 28px;
+  color:var(--muted);
+}
+
+.contact-form{
+  display:grid;
+  gap:19px;
+}
+
+.form-field{
+  display:grid;
+  gap:7px;
+}
+
+.form-field label{
+  font-size:.86rem;
+  font-weight:700;
+  color:var(--ink);
+}
+
+.form-field input,
+.form-field textarea{
+  width:100%;
+  border:1px solid #cfd5ce;
+  background:#fffefa;
+  color:var(--ink);
+  padding:13px 14px;
+  border-radius:3px;
+  font:inherit;
+  outline:none;
+  transition:border-color .2s,box-shadow .2s,background .2s;
+}
+
+.form-field input{
+  min-height:48px;
+}
+
+.form-field textarea{
+  min-height:155px;
+  resize:vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus{
+  border-color:var(--green);
+  box-shadow:0 0 0 3px rgba(36,72,59,.09);
+  background:#fff;
+}
+
+.form-submit{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  width:max-content;
+  min-width:170px;
+  padding:13px 20px;
+  border:1px solid var(--green);
+  border-radius:3px;
+  background:var(--green);
+  color:#fff;
+  font:600 .9rem "DM Sans",sans-serif;
+  cursor:pointer;
+  transition:all .2s;
+}
+
+.form-submit:hover{
+  background:var(--accent);
+  border-color:var(--accent);
+  transform:translateY(-2px);
+}
+
+.contact-note{
+  margin-top:18px;
+  color:var(--muted);
+  font-size:.82rem;
+}
+
+.location-card{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+  padding:28px 32px;
+}
+
+.location-card h3{
+  margin:0 0 5px;
+  font:700 1.25rem "Libre Baskerville",serif;
+}
+
+.location-card p{
+  margin:0;
+  color:var(--muted);
+}
+
+@media(max-width:800px){
+  .contact-hero-box{
+    padding:38px 25px;
+  }
+
+  .contact-layout{
+    grid-template-columns:1fr;
+  }
+
+  .contact-info,
+  .contact-form-card{
+    padding:30px 25px;
+  }
+
+  .location-card{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+<div class="wrap bar">
+
+<a class="brand" href="index.html">Derese Getaneh</a>
+
+<button class="menu"
+        data-menu
+        aria-label="Open navigation"
+        aria-expanded="false">
+Menu
+</button>
+
+<nav class="nav" data-nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a> <a href="academic-journey.html">Academic Journey</a>
+<a href="teaching.html">Teaching</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="achievements.html">Achievements</a>
+<a href="projects.html">Projects</a>
+<a href="student-impact.html">Student Impact</a>
+<a href="legacy.html">Legacy</a>
+<a href="contact.html" class="active" aria-current="page">Contact</a>
+<a href="cv.html">CV</a>
+<a class="platform" data-platform href="#">Teacher Platform &rarr;</a></nav>
+</div>
+</header>
+
+<main id="main">
+
+<section class="contact-hero">
+
+<div class="wrap">
+
+<div class="contact-hero-box">
+
+<div class="kicker">Get in Touch</div>
+
+<h1>Contact me about teaching and educational work.</h1>
+
+<p>
+If you would like to discuss teaching, educational activities,
+professional collaboration, or another matter related to my work,
+you can contact me using the details below or send a message through
+the form.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="wrap contact-layout">
+
+
+<aside class="card contact-info">
+
+<div class="kicker">Contact Details</div>
+
+<h2>You can reach me directly.</h2>
+
+
+<div class="contact-item">
+
+<div class="kicker">Email</div>
+
+<a href="mailto:deresegech@gmail.com">
+deresegech@gmail.com
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="kicker">Phone</div>
+
+<a href="tel:0921130929">
+0921130929
+</a>
+
+<br>
+
+<a href="tel:0982165373">
+0982165373
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="kicker">Facebook</div>
+
+<div>Dere Getaneh Woldemariam Agune</div>
+
+</div>
+
+</aside>
+
+
+<article class="card contact-form-card">
+
+<div class="kicker">Message</div>
+
+<h2>Send me a message.</h2>
+
+<p class="contact-form-intro">
+Use the form below if you would like to contact me about teaching,
+educational activities, professional collaboration, or another enquiry.
+</p>
+
+
+<form
+  class="contact-form"
+  action="https://formspree.io/f/YOUR_FORM_ID"
+  method="POST"
+>
+
+<div class="form-field">
+
+<label for="name">
+Name
+</label>
+
+<input
+  type="text"
+  id="name"
+  name="name"
+  autocomplete="name"
+  placeholder="Your name"
+  required
+>
+
+</div>
+
+
+<div class="form-field">
+
+<label for="email">
+Email
+</label>
+
+<input
+  type="email"
+  id="email"
+  name="email"
+  autocomplete="email"
+  placeholder="you@example.com"
+  required
+>
+
+</div>
+
+
+<div class="form-field">
+
+<label for="message">
+Message
+</label>
+
+<textarea
+  id="message"
+  name="message"
+  placeholder="Write your message here..."
+  required
+></textarea>
+
+</div>
+
+
+<button class="form-submit" type="submit">
+Send Message
+</button>
+
+</form>
+
+<p class="contact-note">
+Please include enough detail in your message for me to understand
+what you would like to discuss.
+</p>
+
+</article>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="wrap">
+
+<div class="card location-card">
+
+<div>
+
+<div class="kicker">Based in</div>
+
+<h3>Debrebrehan</h3>
+
+<p>English Language Teacher</p>
+
+</div>
+
+<div class="small">
+Derese Getaneh Woldemariam
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="wrap footer-grid">
+
+<span>
+&copy; <span data-year></span> Derese Getaneh Woldemariam
+</span>
+
+<span>
+English Language Teacher · Debrebrehan
+</span>
+
+</div>
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+﻿# Development backups
+*-before-*.html
+nav-diagnostic.html
+*.ps1
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# Editor/system files
+.vscode/
+.idea/
+
+# Local project metadata.sidecar/
+.sidecar/

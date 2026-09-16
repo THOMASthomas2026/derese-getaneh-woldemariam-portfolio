@@ -1,0 +1,1 @@
+Place the verified CV PDF here as `derese-getaneh-woldemariam-cv.pdf`.

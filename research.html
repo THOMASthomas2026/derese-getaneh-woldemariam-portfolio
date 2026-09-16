@@ -1,0 +1,539 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Research | Derese Getaneh Woldemariam</title>
+<meta name="description" content="Research and professional development profile of Derese Getaneh Woldemariam, English Language Teacher.">
+<meta name="theme-color" content="#f3f0e8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navigation.css">
+<script defer src="js/config.js"></script>
+<script defer src="js/main.js"></script>
+
+<style>
+.research-hero{
+  position:relative;
+  padding:100px 0 90px;
+  overflow:hidden;
+}
+
+.research-hero:before{
+  content:"";
+  position:absolute;
+  width:480px;
+  height:480px;
+  border-radius:50%;
+  right:-190px;
+  top:-220px;
+  background:rgba(36,72,59,.07);
+}
+
+.research-hero:after{
+  content:"";
+  position:absolute;
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  left:-100px;
+  bottom:-130px;
+  background:rgba(178,138,74,.08);
+}
+
+.research-hero .wrap{
+  position:relative;
+  z-index:1;
+}
+
+.research-hero h1{
+  max-width:850px;
+  margin:12px 0 20px;
+  font-size:clamp(2.8rem,6vw,5rem);
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+
+.research-hero p{
+  max-width:760px;
+  font-size:1.08rem;
+  line-height:1.85;
+}
+
+.research-section{
+  padding-top:25px;
+}
+
+.research-intro{
+  max-width:800px;
+  margin-bottom:42px;
+}
+
+.research-intro h2{
+  margin:8px 0 15px;
+}
+
+.research-intro p{
+  line-height:1.85;
+}
+
+.research-feature{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:0;
+  border-radius:26px;
+  overflow:hidden;
+  background:var(--green);
+  box-shadow:0 20px 50px rgba(23,35,31,.10);
+}
+
+.research-feature-side{
+  position:relative;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  min-height:360px;
+  overflow:hidden;
+}
+
+.research-feature-side:after{
+  content:"R";
+  position:absolute;
+  right:-25px;
+  bottom:-70px;
+  font-size:18rem;
+  line-height:1;
+  font-weight:900;
+  color:rgba(255,255,255,.045);
+}
+
+.research-feature-side .kicker{
+  color:#d9c28d;
+}
+
+.research-feature-side h2{
+  position:relative;
+  z-index:1;
+  color:#fff;
+  max-width:360px;
+  margin:15px 0 0;
+}
+
+.research-feature-content{
+  padding:42px;
+  background:var(--surface);
+}
+
+.research-feature-content h3{
+  margin:0 0 14px;
+  font-size:1.45rem;
+}
+
+.research-feature-content p{
+  color:var(--muted);
+  line-height:1.85;
+  margin:0 0 20px;
+}
+
+.research-points{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:15px;
+  margin-top:25px;
+}
+
+.research-point{
+  padding:21px;
+  border:1px solid var(--line);
+  border-radius:17px;
+  background:rgba(255,254,250,.75);
+}
+
+.research-point strong{
+  display:block;
+  color:var(--green);
+  margin-bottom:7px;
+}
+
+.research-point span{
+  color:var(--muted);
+  font-size:.92rem;
+  line-height:1.6;
+}
+
+.research-pillars{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.research-pillar{
+  padding:30px;
+  border-radius:20px;
+  border:1px solid var(--line);
+  background:var(--surface);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.research-pillar:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 42px rgba(23,35,31,.08);
+  border-color:rgba(178,138,74,.35);
+}
+
+.pillar-number{
+  font-size:.76rem;
+  font-weight:900;
+  letter-spacing:.14em;
+  color:var(--accent);
+}
+
+.research-pillar h3{
+  margin:13px 0 10px;
+}
+
+.research-pillar p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.development-panel{
+  padding:38px;
+  border-radius:25px;
+  background:
+    radial-gradient(circle at 90% 15%,rgba(178,138,74,.13),transparent 30%),
+    var(--soft);
+  border:1px solid rgba(36,72,59,.10);
+}
+
+.development-panel h2{
+  margin:8px 0 14px;
+}
+
+.development-panel > p{
+  max-width:780px;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.development-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  margin-top:26px;
+}
+
+.development-item{
+  display:flex;
+  align-items:flex-start;
+  gap:13px;
+  padding:17px 18px;
+  border-radius:15px;
+  background:rgba(255,254,250,.78);
+  border:1px solid rgba(36,72,59,.09);
+}
+
+.development-item i{
+  display:flex;
+  flex:0 0 26px;
+  width:26px;
+  height:26px;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:var(--green);
+  color:#fff;
+  font-size:.72rem;
+  font-style:normal;
+}
+
+.development-item span{
+  color:var(--ink);
+  font-weight:700;
+  line-height:1.5;
+}
+
+.research-close{
+  margin-top:50px;
+  padding:44px;
+  text-align:center;
+  border-radius:25px;
+  background:var(--surface);
+  border:1px solid rgba(178,138,74,.28);
+}
+
+.research-close h2{
+  max-width:720px;
+  margin:0 auto 13px;
+}
+
+.research-close p{
+  max-width:720px;
+  margin:0 auto;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+@media(max-width:850px){
+  .research-feature{
+    grid-template-columns:1fr;
+  }
+
+  .research-points,
+  .research-pillars,
+  .development-list{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:650px){
+  .research-hero{
+    padding:72px 0 62px;
+  }
+
+  .research-feature-side,
+  .research-feature-content,
+  .development-panel,
+  .research-close{
+    padding:28px;
+  }
+
+  .research-hero h1{
+    font-size:clamp(2.5rem,13vw,4rem);
+  }
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Derese Getaneh</a>
+
+    <button class="menu" data-menu aria-label="Open navigation" aria-expanded="false">
+      Menu
+    </button>
+
+    <nav class="nav" data-nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a> <a href="academic-journey.html">Academic Journey</a>
+<a href="teaching.html">Teaching</a>
+<a href="research.html" class="active" aria-current="page">Research</a>
+<a href="publications.html">Publications</a>
+<a href="achievements.html">Achievements</a>
+<a href="projects.html">Projects</a>
+<a href="student-impact.html">Student Impact</a>
+<a href="legacy.html">Legacy</a>
+<a href="contact.html">Contact</a>
+<a href="cv.html">CV</a>
+<a class="platform" data-platform href="#">Teacher Platform &rarr;</a></nav>
+</div>
+</header>
+
+<main id="main">
+
+<section class="research-hero">
+  <div class="wrap">
+    <div class="kicker">Research &amp; Professional Learning</div>
+    <h1>Using research and reflection to think more carefully about teaching.</h1>
+    <p>
+      Research is one part of my academic and professional development as an
+      English language teacher. My interest in research comes from the
+      questions that arise from teaching, learning, classroom interaction,
+      and the practical challenges students and teachers face.
+    </p>
+  </div>
+</section>
+
+<section class="research-section">
+  <div class="wrap">
+
+    <div class="research-intro">
+      <div class="kicker">Research Profile</div>
+      <h2>Research helps me examine the work I do as a teacher.</h2>
+      <p>
+        I have completed research work as part of my academic and professional
+        development. My experience in English language teaching gives me a
+        practical starting point for thinking about what happens in the
+        classroom, how students participate, and how teaching approaches can
+        be examined and improved.
+      </p>
+    </div>
+
+    <div class="research-feature">
+
+      <div class="research-feature-side">
+        <div class="kicker">Research Perspective</div>
+        <h2>Classroom experience gives me questions worth exploring.</h2>
+      </div>
+
+      <div class="research-feature-content">
+        <h3>Connecting what I observe with what I learn</h3>
+        <p>
+          Teaching gives me opportunities to notice how students respond to
+          lessons, where they participate confidently, and where they need
+          additional support. I see research as a way of looking more closely
+          at these kinds of questions and connecting classroom experience with
+          academic learning and professional reflection.
+        </p>
+
+        <div class="research-points">
+          <div class="research-point">
+            <strong>Teaching Practice</strong>
+            <span>I reflect on classroom experiences and consider how teaching approaches affect student participation.</span>
+          </div>
+
+          <div class="research-point">
+            <strong>Learner Development</strong>
+            <span>I am interested in how students develop confidence, participate in learning, and build their English.</span>
+          </div>
+
+          <div class="research-point">
+            <strong>Professional Learning</strong>
+            <span>I use study and reflection to continue developing my knowledge and practice as a teacher.</span>
+          </div>
+
+          <div class="research-point">
+            <strong>Educational Practice</strong>
+            <span>I try to connect what I learn through professional experience with the practical work of teaching.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="research-section">
+  <div class="wrap">
+
+    <div class="research-intro">
+      <div class="kicker">Areas of Practice</div>
+      <h2>The areas I keep returning to in my teaching and learning.</h2>
+    </div>
+
+    <div class="research-points research-pillar-grid">
+
+      <article class="research-pillar">
+        <div class="pillar-number">01 / LANGUAGE</div>
+        <h3>English Language Learning</h3>
+        <p>
+          I am interested in how students develop their English, particularly
+          their ability to communicate, participate with confidence, and use
+          language in practical situations.
+        </p>
+      </article>
+
+      <article class="research-pillar">
+        <div class="pillar-number">02 / PEDAGOGY</div>
+        <h3>Teaching &amp; Pedagogy</h3>
+        <p>
+          My interest in pedagogy includes student participation,
+          communication, classroom interaction, and the different ways
+          teachers can support students during the learning process.
+        </p>
+      </article>
+
+      <article class="research-pillar">
+        <div class="pillar-number">03 / PRACTICE</div>
+        <h3>Classroom Practice</h3>
+        <p>
+          My classroom experience gives me a practical basis for thinking
+          about teaching, noticing students' needs, and considering how
+          classroom practice can be developed over time.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="research-section">
+  <div class="wrap">
+
+    <div class="development-panel">
+      <div class="kicker">Professional Development</div>
+      <h2>I continue to learn about the parts of teaching that matter in practice.</h2>
+      <p>
+        My professional development has included areas that connect directly
+        with my work as an English language teacher. I have continued to
+        develop my knowledge of English language teaching, pedagogy, assessment,
+        classroom management, ICT, and educational technology.
+      </p>
+
+      <div class="development-list">
+        <div class="development-item">
+          <i>01</i>
+          <span>English language teaching</span>
+        </div>
+
+        <div class="development-item">
+          <i>02</i>
+          <span>Pedagogy</span>
+        </div>
+
+        <div class="development-item">
+          <i>03</i>
+          <span>Assessment</span>
+        </div>
+
+        <div class="development-item">
+          <i>04</i>
+          <span>Classroom management</span>
+        </div>
+
+        <div class="development-item">
+          <i>05</i>
+          <span>ICT</span>
+        </div>
+
+        <div class="development-item">
+          <i>06</i>
+          <span>Educational technology</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="research-close">
+      <h2>Teaching and continued learning are connected for me.</h2>
+      <p>
+        Research, professional development, and classroom experience give me
+        different ways to think about the same work: helping students learn
+        English and continuing to improve as a teacher.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span>&copy; <span data-year></span> Derese Getaneh Woldemariam</span>
+    <span>English Language Teacher &middot; Debrebrehan</span>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

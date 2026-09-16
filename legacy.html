@@ -1,0 +1,695 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Legacy | Derese Getaneh Woldemariam</title>
+<meta name="description" content="Teaching philosophy, professional values, educational contribution, and future vision of Derese Getaneh Woldemariam.">
+<meta name="theme-color" content="#f3f0e8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navigation.css">
+<script defer src="js/config.js"></script>
+<script defer src="js/main.js"></script>
+
+<style>
+.legacy-hero{
+  position:relative;
+  padding:110px 0 100px;
+  overflow:hidden;
+}
+
+.legacy-hero:before{
+  content:"";
+  position:absolute;
+  width:580px;
+  height:580px;
+  border-radius:50%;
+  right:-270px;
+  top:-300px;
+  background:rgba(36,72,59,.075);
+}
+
+.legacy-hero:after{
+  content:"";
+  position:absolute;
+  width:280px;
+  height:280px;
+  border-radius:50%;
+  left:-145px;
+  bottom:-170px;
+  background:rgba(178,138,74,.09);
+}
+
+.legacy-hero .wrap{
+  position:relative;
+  z-index:1;
+}
+
+.legacy-hero h1{
+  max-width:980px;
+  margin:12px 0 24px;
+  font-family:Georgia,serif;
+  font-size:clamp(3rem,7vw,6rem);
+  line-height:1;
+  letter-spacing:-.055em;
+}
+
+.legacy-hero p{
+  max-width:780px;
+  color:var(--muted);
+  font-size:1.12rem;
+  line-height:1.9;
+}
+
+.legacy-section{
+  padding-top:25px;
+}
+
+.legacy-intro{
+  max-width:800px;
+  margin-bottom:44px;
+}
+
+.legacy-intro h2{
+  margin:8px 0 14px;
+}
+
+.legacy-intro p{
+  color:var(--muted);
+  line-height:1.85;
+}
+
+.legacy-quote{
+  position:relative;
+  padding:55px 50px 48px;
+  border-radius:28px;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(178,138,74,.15),transparent 25%),
+    var(--green);
+  overflow:hidden;
+  color:#fff;
+}
+
+.legacy-quote:before{
+  content:"“";
+  position:absolute;
+  top:-42px;
+  left:28px;
+  color:rgba(255,255,255,.07);
+  font-family:Georgia,serif;
+  font-size:15rem;
+  line-height:1;
+}
+
+.legacy-quote .kicker{
+  position:relative;
+  z-index:1;
+  color:#ddc98e;
+}
+
+.legacy-quote blockquote{
+  position:relative;
+  z-index:1;
+  max-width:950px;
+  margin:18px 0 20px;
+  font-family:Georgia,serif;
+  font-size:clamp(1.7rem,3.5vw,3rem);
+  line-height:1.3;
+  letter-spacing:-.025em;
+}
+
+.legacy-quote p{
+  position:relative;
+  z-index:1;
+  margin:0;
+  color:rgba(255,255,255,.72);
+  line-height:1.75;
+}
+
+.values-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:19px;
+}
+
+.value-card{
+  position:relative;
+  min-height:260px;
+  padding:30px;
+  border-radius:21px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  overflow:hidden;
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+
+.value-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 45px rgba(23,35,31,.08);
+}
+
+.value-card:after{
+  content:"";
+  position:absolute;
+  width:125px;
+  height:125px;
+  right:-65px;
+  bottom:-65px;
+  border-radius:50%;
+  background:rgba(36,72,59,.045);
+}
+
+.value-number{
+  position:relative;
+  z-index:1;
+  color:var(--accent);
+  font-size:.7rem;
+  font-weight:900;
+  letter-spacing:.14em;
+}
+
+.value-symbol{
+  position:relative;
+  z-index:1;
+  width:54px;
+  height:54px;
+  margin:24px 0 19px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:16px;
+  background:var(--green);
+  color:#fff;
+  font-family:Georgia,serif;
+  font-size:1.25rem;
+}
+
+.value-card h3{
+  position:relative;
+  z-index:1;
+  margin:0 0 10px;
+}
+
+.value-card p{
+  position:relative;
+  z-index:1;
+  margin:0;
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.legacy-path{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:28px;
+  margin-top:48px;
+}
+
+.path-panel{
+  padding:40px;
+  border-radius:25px;
+  background:var(--surface);
+  border:1px solid var(--line);
+}
+
+.path-panel.dark{
+  background:var(--green);
+  border-color:var(--green);
+  color:#fff;
+}
+
+.path-panel.dark .kicker{
+  color:#ddc98e;
+}
+
+.path-panel.dark h2{
+  color:#fff;
+}
+
+.path-panel h2{
+  margin:8px 0 15px;
+}
+
+.path-panel > p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.82;
+}
+
+.path-panel.dark > p{
+  color:rgba(255,255,255,.76);
+}
+
+.path-list{
+  display:grid;
+  gap:12px;
+  margin-top:28px;
+}
+
+.path-item{
+  display:flex;
+  gap:13px;
+  align-items:flex-start;
+  padding:15px 17px;
+  border-radius:15px;
+  background:var(--soft);
+}
+
+.dark .path-item{
+  background:rgba(255,255,255,.045);
+}
+
+.path-item b{
+  flex:0 0 27px;
+  width:27px;
+  height:27px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:var(--green);
+  color:#fff;
+  font-size:.7rem;
+}
+
+.dark .path-item b{
+  background:rgba(178,138,74,.22);
+  color:#dfcb91;
+}
+
+.path-item span{
+  color:var(--muted);
+  line-height:1.6;
+}
+
+.dark .path-item span{
+  color:rgba(255,255,255,.75);
+}
+
+.future-vision{
+  margin-top:48px;
+  padding:50px 42px;
+  border-radius:27px;
+  background:
+    radial-gradient(circle at 85% 15%,rgba(178,138,74,.16),transparent 26%),
+    var(--surface);
+  border:1px solid rgba(178,138,74,.3);
+}
+
+.future-vision h2{
+  max-width:850px;
+  margin:8px 0 18px;
+  font-family:Georgia,serif;
+  font-size:clamp(2rem,4vw,3.2rem);
+  line-height:1.15;
+}
+
+.future-vision > p{
+  max-width:800px;
+  margin:0;
+  color:var(--muted);
+  line-height:1.85;
+}
+
+.vision-points{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  margin-top:30px;
+}
+
+.vision-point{
+  padding:19px;
+  border-radius:16px;
+  background:var(--soft);
+}
+
+.vision-point strong{
+  display:block;
+  margin-bottom:6px;
+  color:var(--green);
+}
+
+.vision-point span{
+  color:var(--muted);
+  line-height:1.6;
+}
+
+.legacy-closing{
+  margin-top:48px;
+  text-align:center;
+  padding:55px 30px;
+  border-radius:27px;
+  background:var(--green);
+}
+
+.legacy-closing .kicker{
+  color:#ddc98e;
+}
+
+.legacy-closing h2{
+  max-width:850px;
+  margin:8px auto 17px;
+  color:#fff;
+  font-family:Georgia,serif;
+  font-size:clamp(2rem,4vw,3.4rem);
+  line-height:1.15;
+}
+
+.legacy-closing p{
+  max-width:700px;
+  margin:0 auto;
+  color:rgba(255,255,255,.76);
+  line-height:1.8;
+}
+
+@media(max-width:900px){
+  .values-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .legacy-path{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:650px){
+  .legacy-hero{
+    padding:76px 0 65px;
+  }
+
+  .legacy-hero h1{
+    font-size:clamp(2.7rem,14vw,4.5rem);
+  }
+
+  .values-grid,
+  .vision-points{
+    grid-template-columns:1fr;
+  }
+
+  .legacy-quote,
+  .path-panel,
+  .future-vision,
+  .legacy-closing{
+    padding:30px;
+  }
+
+  .legacy-quote blockquote{
+    font-size:1.55rem;
+  }
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Derese Getaneh</a>
+
+    <button class="menu" data-menu aria-label="Open navigation" aria-expanded="false">
+      Menu
+    </button>
+
+    <nav class="nav" data-nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a> <a href="academic-journey.html">Academic Journey</a>
+<a href="teaching.html">Teaching</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="achievements.html">Achievements</a>
+<a href="projects.html">Projects</a>
+<a href="student-impact.html">Student Impact</a>
+<a href="legacy.html" class="active" aria-current="page">Legacy</a>
+<a href="contact.html">Contact</a>
+<a href="cv.html">CV</a>
+<a class="platform" data-platform href="#">Teacher Platform &rarr;</a></nav>
+</div>
+</header>
+
+<main id="main">
+
+<section class="legacy-hero">
+  <div class="wrap">
+    <div class="kicker">Legacy & Vision</div>
+    <h1>What I hope my teaching leaves with students and the school community.</h1>
+    <p>
+      I think about my professional legacy in terms of the students I have
+      taught, the responsibilities I have taken on, the knowledge I have
+      shared, and the relationships I have built through teaching.
+    </p>
+  </div>
+</section>
+
+<section class="legacy-section">
+  <div class="wrap">
+
+    <div class="legacy-intro">
+      <div class="kicker">Teaching With Purpose</div>
+      <h2>Teaching is more than what happens during one lesson.</h2>
+      <p>
+        I see teaching as a responsibility that continues beyond preparing
+        and delivering individual lessons. My work includes teaching English,
+        communicating with students, advising and mentoring learners, working
+        with colleagues, and taking part in wider school responsibilities.
+      </p>
+    </div>
+
+    <article class="legacy-quote">
+      <div class="kicker">Personal Motto</div>
+
+      <blockquote>
+        “Teach with purpose, inspire with passion.”
+      </blockquote>
+
+      <p>
+        This motto expresses how I want to approach my work: with a clear
+        purpose in teaching and with genuine care for the students I work
+        with.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<section class="legacy-section">
+  <div class="wrap">
+
+    <div class="legacy-intro">
+      <div class="kicker">Core Values</div>
+      <h2>Three values I try to bring to my work.</h2>
+      <p>
+        Commitment, optimism, and collaboration are values I try to maintain
+        in my teaching, my responsibilities at school, and my work with
+        students and colleagues.
+      </p>
+    </div>
+
+    <div class="values-grid">
+
+      <article class="value-card">
+        <div class="value-number">01 / COMMITMENT</div>
+        <div class="value-symbol">C</div>
+        <h3>Committed</h3>
+        <p>
+          Staying dedicated to teaching, supporting students, and carrying
+          out the responsibilities I take on at school.
+        </p>
+      </article>
+
+      <article class="value-card">
+        <div class="value-number">02 / OPTIMISM</div>
+        <div class="value-symbol">O</div>
+        <h3>Optimistic</h3>
+        <p>
+          Remaining positive when challenges arise and continuing to look for
+          ways to improve my teaching and support students.
+        </p>
+      </article>
+
+      <article class="value-card">
+        <div class="value-number">03 / COLLABORATION</div>
+        <div class="value-symbol">C</div>
+        <h3>Collaborative</h3>
+        <p>
+          Working with students and colleagues and recognizing that many
+          school activities are stronger when people contribute together.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="legacy-section">
+  <div class="wrap">
+
+    <div class="legacy-path">
+
+      <article class="path-panel dark">
+        <div class="kicker">Professional Contribution</div>
+        <h2>My responsibilities have extended beyond classroom teaching.</h2>
+
+        <p>
+          Alongside teaching English, I have taken on responsibilities in
+          school leadership, student advising, coordination, and educational
+          and community-oriented activities. These roles have allowed me to
+          contribute to school life in different ways.
+        </p>
+
+        <div class="path-list">
+
+          <div class="path-item">
+            <b>01</b>
+            <span>Teaching English and advising students.</span>
+          </div>
+
+          <div class="path-item">
+            <b>02</b>
+            <span>Serving as a department head and unit leader.</span>
+          </div>
+
+          <div class="path-item">
+            <b>03</b>
+            <span>Working as a homeroom teacher and school management member.</span>
+          </div>
+
+          <div class="path-item">
+            <b>04</b>
+            <span>Taking part in educational and community-oriented activities.</span>
+          </div>
+
+        </div>
+      </article>
+
+      <article class="path-panel">
+        <div class="kicker">Continuing Learning</div>
+        <h2>I continue to learn alongside my teaching.</h2>
+
+        <p>
+          My professional learning has included English language teaching,
+          pedagogy, assessment, classroom management, ICT, and educational
+          technology. These areas connect directly with the practical work
+          I do as a teacher.
+        </p>
+
+        <div class="path-list">
+
+          <div class="path-item">
+            <b>01</b>
+            <span>Developing my knowledge of English language teaching.</span>
+          </div>
+
+          <div class="path-item">
+            <b>02</b>
+            <span>Learning about pedagogy and classroom practice.</span>
+          </div>
+
+          <div class="path-item">
+            <b>03</b>
+            <span>Developing my knowledge of assessment and classroom management.</span>
+          </div>
+
+          <div class="path-item">
+            <b>04</b>
+            <span>Using ICT and educational technology in my work.</span>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+
+    <article class="future-vision">
+      <div class="kicker">Future Vision</div>
+
+      <h2>
+        I want to keep developing as an English language teacher.
+      </h2>
+
+      <p>
+        My professional vision is to continue developing as an innovative
+        English language teacher, make effective use of technology, and
+        produce high-quality English language learning materials that can
+        support students.
+      </p>
+
+      <div class="vision-points">
+
+        <div class="vision-point">
+          <strong>Innovation</strong>
+          <span>
+            Continue exploring approaches that can make English teaching
+            more useful and engaging for students.
+          </span>
+        </div>
+
+        <div class="vision-point">
+          <strong>Technology</strong>
+          <span>
+            Continue learning how technology can support teaching and
+            learning.
+          </span>
+        </div>
+
+        <div class="vision-point">
+          <strong>Learning Materials</strong>
+          <span>
+            Prepare high-quality English language learning materials for
+            students.
+          </span>
+        </div>
+
+        <div class="vision-point">
+          <strong>Influence</strong>
+          <span>
+            Continue supporting students and contributing to the educational
+            communities in which I work.
+          </span>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="legacy-closing">
+      <div class="kicker">A Lasting Principle</div>
+
+      <h2>
+        I want my teaching to leave students with something they can use.
+      </h2>
+
+      <p>
+        Throughout my teaching career, I have tried to give students
+        opportunities to learn, practise English, communicate, and develop
+        greater confidence in using the language. That is the kind of work
+        I want to continue building on in the years ahead.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span>&copy; <span data-year></span> Derese Getaneh Woldemariam</span>
+    <span>English Language Teacher &middot; Debrebrehan</span>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

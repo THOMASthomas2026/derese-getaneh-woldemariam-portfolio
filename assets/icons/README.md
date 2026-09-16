@@ -1,0 +1,1 @@
+Reserved for favicon and other local icons.

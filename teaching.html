@@ -1,0 +1,734 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Teaching | Derese Getaneh Woldemariam</title>
+<meta name="description" content="Teaching philosophy, classroom practice, professional responsibilities, and skills of Derese Getaneh Woldemariam.">
+<meta name="theme-color" content="#f3f0e8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navigation.css">
+<script defer src="js/config.js"></script>
+<script defer src="js/main.js"></script>
+
+<style>
+/* =========================================================
+   TEACHING PAGE
+   ========================================================= */
+
+.teaching-hero{
+  position:relative;
+  padding:96px 0 88px;
+  overflow:hidden;
+}
+
+.teaching-hero:before{
+  content:"";
+  position:absolute;
+  width:430px;
+  height:430px;
+  border-radius:50%;
+  right:-170px;
+  top:-180px;
+  background:rgba(36,72,59,.07);
+}
+
+.teaching-hero:after{
+  content:"";
+  position:absolute;
+  width:230px;
+  height:230px;
+  border-radius:50%;
+  left:-110px;
+  bottom:-130px;
+  background:rgba(178,138,74,.08);
+}
+
+.teaching-hero .wrap{
+  position:relative;
+  z-index:1;
+}
+
+.teaching-hero h1{
+  max-width:850px;
+  margin:12px 0 20px;
+  font-size:clamp(2.7rem,6vw,5rem);
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+
+.teaching-hero p{
+  max-width:750px;
+  font-size:1.08rem;
+  line-height:1.85;
+  color:var(--muted);
+}
+
+.teaching-statement{
+  margin-top:34px;
+  max-width:850px;
+  padding-left:22px;
+  border-left:3px solid var(--accent);
+  font-size:1.12rem;
+  line-height:1.8;
+  color:var(--ink);
+}
+
+.teaching-section{
+  padding-top:28px;
+}
+
+.teaching-section-head{
+  max-width:780px;
+  margin-bottom:42px;
+}
+
+.teaching-section-head h2{
+  margin:8px 0 15px;
+}
+
+.teaching-section-head p{
+  line-height:1.8;
+}
+
+.philosophy-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:24px;
+  align-items:stretch;
+}
+
+.philosophy-card{
+  position:relative;
+  min-height:330px;
+  padding:38px;
+  border-radius:24px;
+  background:var(--surface);
+  border:1px solid rgba(36,72,59,.12);
+  box-shadow:0 18px 45px rgba(23,35,31,.06);
+  overflow:hidden;
+}
+
+.philosophy-card.primary{
+  background:var(--green);
+  color:#fff;
+}
+
+.philosophy-card.primary:after{
+  content:"01";
+  position:absolute;
+  right:25px;
+  bottom:-35px;
+  font-size:9rem;
+  line-height:1;
+  font-weight:900;
+  color:rgba(255,255,255,.055);
+}
+
+.philosophy-card.secondary:after{
+  content:"02";
+  position:absolute;
+  right:25px;
+  bottom:-35px;
+  font-size:9rem;
+  line-height:1;
+  font-weight:900;
+  color:rgba(36,72,59,.045);
+}
+
+.philosophy-card .kicker{
+  color:var(--accent);
+}
+
+.philosophy-card.primary .kicker{
+  color:#d9c28d;
+}
+
+.philosophy-card h2{
+  margin:12px 0 16px;
+  max-width:560px;
+}
+
+.philosophy-card p{
+  max-width:590px;
+  line-height:1.85;
+  color:var(--muted);
+}
+
+.philosophy-card.primary p{
+  color:rgba(255,255,255,.82);
+}
+
+.method-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.method-card{
+  position:relative;
+  padding:28px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:rgba(255,254,250,.75);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.method-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(178,138,74,.4);
+  box-shadow:0 18px 40px rgba(23,35,31,.08);
+}
+
+.method-number{
+  display:flex;
+  width:38px;
+  height:38px;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:rgba(36,72,59,.09);
+  color:var(--green);
+  font-weight:900;
+  margin-bottom:20px;
+}
+
+.method-card h3{
+  margin:0 0 10px;
+}
+
+.method-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.experience-panel{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:28px;
+  padding:38px;
+  border-radius:26px;
+  background:
+    radial-gradient(circle at 90% 10%,rgba(178,138,74,.14),transparent 32%),
+    linear-gradient(135deg,#24483b,#19382e);
+  color:#fff;
+  overflow:hidden;
+}
+
+.experience-number{
+  font-size:clamp(3rem,6vw,5.7rem);
+  line-height:.9;
+  font-weight:900;
+  letter-spacing:-.06em;
+  color:#fff;
+}
+
+.experience-number span{
+  display:block;
+  margin-top:13px;
+  font-size:.9rem;
+  line-height:1.4;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#d9c28d;
+}
+
+.experience-content h2{
+  color:#fff;
+  margin:0 0 15px;
+}
+
+.experience-content p{
+  margin:0;
+  color:rgba(255,255,255,.82);
+  line-height:1.8;
+}
+
+.responsibility-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.responsibility-card{
+  padding:25px;
+  border-radius:18px;
+  background:var(--surface);
+  border:1px solid var(--line);
+}
+
+.responsibility-card h3{
+  margin:0 0 9px;
+}
+
+.responsibility-card p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.tech-panel{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:35px;
+  padding:34px;
+  border-radius:23px;
+  border:1px solid rgba(36,72,59,.12);
+  background:var(--soft);
+}
+
+.tech-panel h2{
+  margin:7px 0 10px;
+}
+
+.tech-panel p{
+  max-width:650px;
+  margin:0;
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.tech-list{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:9px;
+  max-width:360px;
+}
+
+.tech-list span{
+  padding:9px 13px;
+  border-radius:999px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  font-size:.84rem;
+  font-weight:700;
+  color:var(--green);
+}
+
+.teaching-close{
+  position:relative;
+  margin-top:54px;
+  padding:48px;
+  border-radius:26px;
+  text-align:center;
+  background:var(--surface);
+  border:1px solid rgba(178,138,74,.28);
+  box-shadow:0 15px 45px rgba(23,35,31,.05);
+  overflow:hidden;
+}
+
+.teaching-close:before,
+.teaching-close:after{
+  content:"";
+  position:absolute;
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:1px solid rgba(178,138,74,.16);
+}
+
+.teaching-close:before{
+  left:-55px;
+  top:-55px;
+}
+
+.teaching-close:after{
+  right:-55px;
+  bottom:-55px;
+}
+
+.teaching-close blockquote{
+  position:relative;
+  z-index:1;
+  max-width:800px;
+  margin:0 auto;
+  font-family:Georgia,serif;
+  font-size:clamp(1.55rem,3vw,2.3rem);
+  line-height:1.45;
+  color:var(--green);
+}
+
+.teaching-close cite{
+  display:block;
+  margin-top:18px;
+  font-family:inherit;
+  font-size:.82rem;
+  font-style:normal;
+  font-weight:800;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+
+@media(max-width:850px){
+  .philosophy-grid,
+  .experience-panel{
+    grid-template-columns:1fr;
+  }
+
+  .method-grid{
+    grid-template-columns:1fr;
+  }
+
+  .tech-panel{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .tech-list{
+    justify-content:flex-start;
+    max-width:none;
+  }
+}
+
+@media(max-width:650px){
+  .teaching-hero{
+    padding:72px 0 62px;
+  }
+
+  .teaching-hero h1{
+    font-size:clamp(2.5rem,13vw,4rem);
+  }
+
+  .philosophy-card{
+    min-height:0;
+    padding:28px;
+  }
+
+  .experience-panel,
+  .teaching-close,
+  .tech-panel{
+    padding:27px;
+  }
+
+  .responsibility-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Derese Getaneh</a>
+
+    <button class="menu" data-menu aria-label="Open navigation" aria-expanded="false">
+      Menu
+    </button>
+
+    <nav class="nav" data-nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a> <a href="academic-journey.html">Academic Journey</a>
+<a href="teaching.html" class="active" aria-current="page">Teaching</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="achievements.html">Achievements</a>
+<a href="projects.html">Projects</a>
+<a href="student-impact.html">Student Impact</a>
+<a href="legacy.html">Legacy</a>
+<a href="contact.html">Contact</a>
+<a href="cv.html">CV</a>
+<a class="platform" data-platform href="#">Teacher Platform &rarr;</a></nav>
+</div>
+</header>
+
+<main id="main">
+
+<section class="teaching-hero">
+  <div class="wrap">
+    <div class="kicker">Teaching Practice</div>
+    <h1>How I teach English through interaction and communication.</h1>
+    <p>
+      I teach English with an emphasis on participation, communication, and
+      practical use of the language. I want students to have opportunities to
+      speak, ask questions, work with others, and connect what they learn in
+      class with situations outside the classroom.
+    </p>
+
+    <div class="teaching-statement">
+      “I enjoy teaching English as it gives me much opportunity to have good
+      interaction with my students in class and out of the classroom.”
+    </div>
+  </div>
+</section>
+
+<section class="teaching-section">
+  <div class="wrap">
+
+    <div class="teaching-section-head">
+      <div class="kicker">Philosophy &amp; Approach</div>
+      <h2>I want students to take part in the lesson.</h2>
+      <p>
+        I do not see English teaching as simply explaining a lesson and asking
+        students to remember it. Students need chances to use the language,
+        respond to questions, discuss ideas, work with classmates, and learn
+        from mistakes. My approach is to give students an active role while I
+        guide them and provide support when they need it.
+      </p>
+    </div>
+
+    <div class="philosophy-grid">
+
+      <article class="philosophy-card primary">
+        <div class="kicker">01 / Philosophy</div>
+        <h2>Students should have a voice in the classroom.</h2>
+        <p>
+          I try to make my lessons student centered by giving learners
+          opportunities to speak, respond, ask questions, and work with one
+          another. I also pay attention to students who need more support,
+          because participation is not the same for every learner.
+        </p>
+      </article>
+
+      <article class="philosophy-card secondary">
+        <div class="kicker">02 / Approach</div>
+        <h2>English should be used, not only studied.</h2>
+        <p>
+          I use the Communicative Approach and try to connect classroom
+          activities with situations in which students may actually need to
+          use English. This helps move lessons beyond memorising language
+          rules and gives students opportunities to practise communication.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="teaching-section">
+  <div class="wrap">
+
+    <div class="teaching-section-head">
+      <div class="kicker">Classroom Practice</div>
+      <h2>What I try to make possible in my classroom.</h2>
+    </div>
+
+    <div class="method-grid">
+
+      <article class="method-card">
+        <div class="method-number">01</div>
+        <h3>Interaction</h3>
+        <p>
+          I value the interaction that happens when students and teachers
+          exchange ideas, ask questions, and respond to one another. I also
+          believe that getting to know students and listening to their needs
+          helps me understand how to support them.
+        </p>
+      </article>
+
+      <article class="method-card">
+        <div class="method-number">02</div>
+        <h3>Communication</h3>
+        <p>
+          I use the Communicative Approach to give students opportunities to
+          use English for practical purposes. Connecting lessons with
+          real-life situations can help students see English as something they
+          can use, not only something they study for an examination.
+        </p>
+      </article>
+
+      <article class="method-card">
+        <div class="method-number">03</div>
+        <h3>Learner Development</h3>
+        <p>
+          My work with students also includes advising, mentoring, and
+          encouragement. I want students to develop their English while
+          becoming more willing to participate, ask for help, and take
+          responsibility for their own learning.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="teaching-section">
+  <div class="wrap">
+
+    <div class="experience-panel">
+      <div class="experience-number">
+        18
+        <span>Years teaching English in Grade 12</span>
+      </div>
+
+      <div class="experience-content">
+        <h2>18 years of teaching and working with students.</h2>
+        <p>
+          I have taught English for the last 18 years in Grade 12. Alongside
+          classroom teaching, my work has included advising students, taking
+          part in school activities, contributing to volunteer work, and
+          supporting educational and community-oriented activities. These
+          responsibilities have given me opportunities to work with students
+          in different situations, not only during regular lessons.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="teaching-section">
+  <div class="wrap">
+
+    <div class="teaching-section-head">
+      <div class="kicker">Professional Responsibility</div>
+      <h2>My work at school has included more than classroom teaching.</h2>
+      <p>
+        Over the course of my teaching career, I have taken on different
+        responsibilities within the school. These roles have involved
+        working with colleagues, supporting students, coordinating activities,
+        and contributing to the wider work of the school.
+      </p>
+    </div>
+
+    <div class="responsibility-grid">
+
+      <article class="responsibility-card">
+        <h3>Department Leadership</h3>
+        <p>
+          I have served as a department head, taking part in the coordination
+          of work within the English department and supporting its academic
+          responsibilities.
+        </p>
+      </article>
+
+      <article class="responsibility-card">
+        <h3>Unit Leadership</h3>
+        <p>
+          As a unit leader, I have taken responsibility for supporting school
+          activities and working with others on the coordination of school
+          work.
+        </p>
+      </article>
+
+      <article class="responsibility-card">
+        <h3>Homeroom Teaching</h3>
+        <p>
+          My homeroom responsibilities have given me another opportunity to
+          stay in regular contact with students and support them alongside
+          their academic work.
+        </p>
+      </article>
+
+      <article class="responsibility-card">
+        <h3>School Management</h3>
+        <p>
+          I have participated as a member of school management, contributing
+          to discussions and responsibilities connected with the wider
+          operation of the school.
+        </p>
+      </article>
+
+      <article class="responsibility-card">
+        <h3>Minimedia Coordination</h3>
+        <p>
+          I have worked as a minimedia coordinator, taking part in school
+          communication and activities connected with the school's minimedia
+          work.
+        </p>
+      </article>
+
+      <article class="responsibility-card">
+        <h3>Project Design</h3>
+        <p>
+          I have contributed to school projects through project design and
+          participation, working on activities intended to support the
+          school's educational work.
+        </p>
+      </article>
+
+      <article class="responsibility-card">
+        <h3>School Communication</h3>
+        <p>
+          I have administered the Shewarobit General Secondary School
+          Facebook page, helping manage the school's communication through
+          that platform.
+        </p>
+      </article>
+
+      <article class="responsibility-card">
+        <h3>Advising &amp; Volunteer Work</h3>
+        <p>
+          I have supported students through advising and have also taken part
+          in volunteer activities connected with educational and
+          community-oriented work.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="teaching-section">
+  <div class="wrap">
+
+    <div class="tech-panel">
+      <div>
+        <div class="kicker">Professional Skills &amp; Technology</div>
+        <h2>Skills and tools I use in my teaching work.</h2>
+        <p>
+          My work as a teacher depends on communication, collaboration,
+          problem solving, and the ability to support students as they
+          progress. I also use technology as part of lesson preparation,
+          communication, and other school-related tasks. These skills and
+          tools have become part of the practical side of my daily work.
+        </p>
+      </div>
+
+      <div class="tech-list" aria-label="Technology tools">
+        <span>Laptop</span>
+        <span>Desktop Computer</span>
+        <span>Tablet</span>
+        <span>Mobile Phone</span>
+        <span>Excel</span>
+        <span>Word</span>
+        <span>ICT</span>
+        <span>Educational Technology</span>
+      </div>
+    </div>
+
+    <div class="teaching-close">
+      <blockquote>
+        “Teach with purpose, inspire with passion.”
+        <cite>Teaching Motto</cite>
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span>&copy; <span data-year></span> Derese Getaneh Woldemariam</span>
+    <span>English Language Teacher &middot; Debrebrehan</span>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

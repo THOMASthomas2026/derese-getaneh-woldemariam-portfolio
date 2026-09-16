@@ -1,0 +1,1 @@
+Place the approved teacher portrait here. Update the portrait block in index.html when ready.

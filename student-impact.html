@@ -1,0 +1,733 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Impact | Derese Getaneh Woldemariam</title>
+<meta name="description" content="Student impact and learner development through the teaching practice of Derese Getaneh Woldemariam.">
+<meta name="theme-color" content="#f3f0e8">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navigation.css">
+<script defer src="js/config.js"></script>
+<script defer src="js/main.js"></script>
+
+<style>
+.impact-hero{
+  position:relative;
+  padding:100px 0 90px;
+  overflow:hidden;
+}
+
+.impact-hero:before{
+  content:"";
+  position:absolute;
+  width:540px;
+  height:540px;
+  border-radius:50%;
+  right:-245px;
+  top:-285px;
+  background:rgba(36,72,59,.075);
+}
+
+.impact-hero:after{
+  content:"";
+  position:absolute;
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  left:-135px;
+  bottom:-155px;
+  background:rgba(178,138,74,.09);
+}
+
+.impact-hero .wrap{
+  position:relative;
+  z-index:1;
+}
+
+.impact-hero h1{
+  max-width:940px;
+  margin:12px 0 20px;
+  font-size:clamp(2.8rem,6vw,5rem);
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+
+.impact-hero p{
+  max-width:780px;
+  color:var(--muted);
+  font-size:1.08rem;
+  line-height:1.85;
+}
+
+.impact-section{
+  padding-top:25px;
+}
+
+.impact-intro{
+  max-width:790px;
+  margin-bottom:42px;
+}
+
+.impact-intro h2{
+  margin:8px 0 14px;
+}
+
+.impact-intro p{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.impact-statement{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:0;
+  overflow:hidden;
+  border-radius:27px;
+  background:var(--green);
+  box-shadow:0 25px 60px rgba(23,35,31,.11);
+}
+
+.statement-side{
+  position:relative;
+  min-height:410px;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  color:#fff;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(178,138,74,.24),transparent 30%),
+    linear-gradient(145deg,#24483b,#17342b);
+  overflow:hidden;
+}
+
+.statement-side:before,
+.statement-side:after{
+  content:"";
+  position:absolute;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:50%;
+}
+
+.statement-side:before{
+  width:310px;
+  height:310px;
+  right:-155px;
+  bottom:-155px;
+}
+
+.statement-side:after{
+  width:170px;
+  height:170px;
+  left:-85px;
+  top:38%;
+  border-color:rgba(178,138,74,.23);
+}
+
+.statement-label{
+  position:relative;
+  z-index:1;
+  color:#ddc98e;
+  font-size:.7rem;
+  font-weight:900;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.statement-mark{
+  position:relative;
+  z-index:1;
+  width:95px;
+  height:95px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:50%;
+  font-family:Georgia,serif;
+  font-size:2.4rem;
+}
+
+.statement-side strong{
+  position:relative;
+  z-index:1;
+  max-width:310px;
+  color:#fff;
+  font-family:Georgia,serif;
+  font-size:1.65rem;
+  line-height:1.25;
+}
+
+.statement-content{
+  padding:45px;
+  background:var(--surface);
+}
+
+.statement-content .kicker{
+  margin-bottom:8px;
+}
+
+.statement-content h2{
+  margin:0 0 18px;
+  font-size:2rem;
+  line-height:1.18;
+}
+
+.statement-content > p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.85;
+}
+
+.impact-facts{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  margin-top:30px;
+}
+
+.impact-fact{
+  padding:18px;
+  border-radius:16px;
+  background:var(--soft);
+}
+
+.impact-fact span{
+  display:block;
+  margin-bottom:6px;
+  color:var(--muted);
+  font-size:.68rem;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.impact-fact strong{
+  color:var(--green);
+}
+
+.impact-areas{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:19px;
+}
+
+.impact-card{
+  position:relative;
+  padding:30px;
+  min-height:270px;
+  border-radius:21px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  overflow:hidden;
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+
+.impact-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 42px rgba(23,35,31,.08);
+}
+
+.impact-card:after{
+  content:"";
+  position:absolute;
+  width:125px;
+  height:125px;
+  border-radius:50%;
+  right:-62px;
+  bottom:-62px;
+  background:rgba(36,72,59,.045);
+}
+
+.impact-number{
+  position:relative;
+  z-index:1;
+  color:var(--accent);
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.14em;
+}
+
+.impact-icon{
+  position:relative;
+  z-index:1;
+  width:50px;
+  height:50px;
+  margin:23px 0 19px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:15px;
+  background:var(--green);
+  color:#fff;
+  font-family:Georgia,serif;
+  font-size:1.2rem;
+}
+
+.impact-card h3{
+  position:relative;
+  z-index:1;
+  margin:0 0 10px;
+}
+
+.impact-card p{
+  position:relative;
+  z-index:1;
+  margin:0;
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.student-voice{
+  margin-top:48px;
+  padding:45px;
+  border-radius:26px;
+  background:
+    radial-gradient(circle at 88% 15%,rgba(178,138,74,.13),transparent 25%),
+    var(--surface);
+  border:1px solid rgba(178,138,74,.3);
+}
+
+.student-voice .quote-mark{
+  color:var(--accent);
+  font-family:Georgia,serif;
+  font-size:4.2rem;
+  line-height:.7;
+}
+
+.student-voice blockquote{
+  max-width:900px;
+  margin:18px 0 16px;
+  color:var(--ink);
+  font-family:Georgia,serif;
+  font-size:clamp(1.35rem,2.5vw,2rem);
+  line-height:1.45;
+}
+
+.student-voice p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.75;
+}
+
+.learner-development{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:28px;
+  margin-top:48px;
+}
+
+.development-panel{
+  padding:38px;
+  border-radius:24px;
+  background:var(--green);
+  color:#fff;
+}
+
+.development-panel .kicker{
+  color:#ddc98e;
+}
+
+.development-panel h2{
+  margin:8px 0 16px;
+  color:#fff;
+}
+
+.development-panel p{
+  margin:0;
+  color:rgba(255,255,255,.78);
+  line-height:1.82;
+}
+
+.development-list{
+  display:grid;
+  gap:12px;
+  margin-top:27px;
+}
+
+.development-item{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:15px 16px;
+  border:1px solid rgba(255,255,255,.11);
+  border-radius:15px;
+  background:rgba(255,255,255,.04);
+}
+
+.development-item b{
+  flex:0 0 25px;
+  width:25px;
+  height:25px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:rgba(178,138,74,.2);
+  color:#dfcb91;
+  font-size:.72rem;
+}
+
+.development-item span{
+  color:rgba(255,255,255,.76);
+  line-height:1.6;
+}
+
+.experience-panel{
+  padding:38px;
+  border-radius:24px;
+  border:1px solid var(--line);
+  background:var(--surface);
+}
+
+.experience-panel .kicker{
+  margin-bottom:8px;
+}
+
+.experience-number{
+  margin:10px 0 5px;
+  color:var(--green);
+  font-family:Georgia,serif;
+  font-size:clamp(3.3rem,7vw,5.8rem);
+  line-height:1;
+  letter-spacing:-.06em;
+}
+
+.experience-panel h3{
+  margin:0 0 14px;
+}
+
+.experience-panel p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.impact-closing{
+  margin-top:48px;
+  padding:45px 30px;
+  text-align:center;
+  border-radius:25px;
+  background:var(--surface);
+  border:1px solid var(--line);
+}
+
+.impact-closing h2{
+  max-width:780px;
+  margin:0 auto 14px;
+}
+
+.impact-closing p{
+  max-width:720px;
+  margin:0 auto;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+@media(max-width:900px){
+  .impact-statement,
+  .learner-development{
+    grid-template-columns:1fr;
+  }
+
+  .impact-areas{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:650px){
+  .impact-hero{
+    padding:72px 0 62px;
+  }
+
+  .impact-hero h1{
+    font-size:clamp(2.5rem,13vw,4rem);
+  }
+
+  .impact-areas,
+  .impact-facts{
+    grid-template-columns:1fr;
+  }
+
+  .statement-content,
+  .statement-side,
+  .student-voice,
+  .development-panel,
+  .experience-panel,
+  .impact-closing{
+    padding:28px;
+  }
+
+  .statement-side{
+    min-height:350px;
+  }
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Derese Getaneh</a>
+
+    <button class="menu" data-menu aria-label="Open navigation" aria-expanded="false">
+      Menu
+    </button>
+
+    <nav class="nav" data-nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a> <a href="academic-journey.html">Academic Journey</a>
+<a href="teaching.html">Teaching</a>
+<a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
+<a href="achievements.html">Achievements</a>
+<a href="projects.html">Projects</a>
+<a href="student-impact.html" class="active" aria-current="page">Student Impact</a>
+<a href="legacy.html">Legacy</a>
+<a href="contact.html">Contact</a>
+<a href="cv.html">CV</a>
+<a class="platform" data-platform href="#">Teacher Platform &rarr;</a></nav>
+</div>
+</header>
+
+<main id="main">
+
+<section class="impact-hero">
+  <div class="wrap">
+    <div class="kicker">Student Impact</div>
+    <h1>Supporting students as they learn and use English.</h1>
+    <p>
+      My work with students focuses on helping them participate, communicate,
+      ask questions, and develop their English through classroom practice.
+      I also try to support students through advising, mentoring, and
+      interaction outside regular lessons.
+    </p>
+  </div>
+</section>
+
+<section class="impact-section">
+  <div class="wrap">
+
+    <div class="impact-intro">
+      <div class="kicker">A Learner-Centered Practice</div>
+      <h2>I want students to take part in their own learning.</h2>
+      <p>
+        My teaching is student centered and communicative. I try to connect
+        English lessons with real-life situations and give students
+        opportunities to participate, communicate, and practise the language
+        themselves.
+      </p>
+    </div>
+
+    <article class="impact-statement">
+
+      <div class="statement-side">
+        <div class="statement-label">Teaching & Learning</div>
+
+        <div class="statement-mark">L</div>
+
+        <strong>
+          Building confidence through communication and participation.
+        </strong>
+      </div>
+
+      <div class="statement-content">
+        <div class="kicker">Student Development</div>
+        <h2>Supporting students through teaching and interaction.</h2>
+
+        <p>
+          I work with English language learners through classroom interaction,
+          communication, advising, mentoring, and regular teaching practice.
+          My aim is to give students opportunities to use English and to
+          support them when they need additional guidance.
+        </p>
+
+        <div class="impact-facts">
+          <div class="impact-fact">
+            <span>Teaching Experience</span>
+            <strong>18 years in Grade 12 English</strong>
+          </div>
+
+          <div class="impact-fact">
+            <span>Teaching Style</span>
+            <strong>Student centered</strong>
+          </div>
+
+          <div class="impact-fact">
+            <span>Approach</span>
+            <strong>Communicative</strong>
+          </div>
+
+          <div class="impact-fact">
+            <span>Context</span>
+            <strong>Real-life situations</strong>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+  </div>
+</section>
+
+<section class="impact-section">
+  <div class="wrap">
+
+    <div class="impact-intro">
+      <div class="kicker">Areas of Impact</div>
+      <h2>The parts of student development I try to support.</h2>
+      <p>
+        My work with students includes English language development as well
+        as the confidence to participate, communicate with others, ask for
+        help, and continue working on their learning.
+      </p>
+    </div>
+
+    <div class="impact-areas">
+
+      <article class="impact-card">
+        <div class="impact-number">01 / CONFIDENCE</div>
+        <div class="impact-icon">C</div>
+        <h3>Learner Confidence</h3>
+        <p>
+          I encourage students to take part in lessons, communicate their
+          ideas, and become more willing to use English.
+        </p>
+      </article>
+
+      <article class="impact-card">
+        <div class="impact-number">02 / LANGUAGE</div>
+        <div class="impact-icon">L</div>
+        <h3>English Skills</h3>
+        <p>
+          I help students develop their English through classroom practice,
+          communication, and opportunities to use the language.
+        </p>
+      </article>
+
+      <article class="impact-card">
+        <div class="impact-number">03 / INTERACTION</div>
+        <div class="impact-icon">I</div>
+        <h3>Communication</h3>
+        <p>
+          I value opportunities for students to interact with me and with
+          one another, both during lessons and outside the classroom.
+        </p>
+      </article>
+
+    </div>
+
+    <article class="student-voice">
+      <div class="quote-mark">“</div>
+
+      <blockquote>
+        I enjoy teaching English as it gives me much opportunity to have good
+        interaction with my students in class and out of the classroom.
+      </blockquote>
+
+      <p>
+        This is how I describe one of the parts of teaching that I value
+        most: the opportunity to interact with students both during lessons
+        and outside the classroom.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<section class="impact-section">
+  <div class="wrap">
+
+    <div class="learner-development">
+
+      <article class="development-panel">
+        <div class="kicker">Learner Development</div>
+        <h2>My work with students goes beyond the lesson itself.</h2>
+
+        <p>
+          Alongside teaching, I have supported students through advising,
+          mentoring, encouragement, and attention to their progress. These
+          responsibilities give me opportunities to work with students in
+          different ways and to support them when they need guidance.
+        </p>
+
+        <div class="development-list">
+
+          <div class="development-item">
+            <b>01</b>
+            <span>Following students' progress and offering guidance.</span>
+          </div>
+
+          <div class="development-item">
+            <b>02</b>
+            <span>Encouraging students to participate and keep learning.</span>
+          </div>
+
+          <div class="development-item">
+            <b>03</b>
+            <span>Providing students with advising and support.</span>
+          </div>
+
+          <div class="development-item">
+            <b>04</b>
+            <span>Working to make classroom participation possible for different learners.</span>
+          </div>
+
+        </div>
+      </article>
+
+      <article class="experience-panel">
+        <div class="kicker">Grade 12 Experience</div>
+
+        <div class="experience-number">18</div>
+
+        <h3>Years teaching English in Grade 12.</h3>
+
+        <p>
+          I have taught English in Grade 12 for 18 years. This experience has
+          given me many years of working directly with students at an important
+          stage of their secondary education.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="impact-closing">
+      <h2>The relationship with students is an important part of teaching.</h2>
+      <p>
+        I have described being recognized by my own students every year.
+        For me, these interactions are part of what makes teaching
+        worthwhile and remind me that teaching involves more than delivering
+        lessons.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span>&copy; <span data-year></span> Derese Getaneh Woldemariam</span>
+    <span>English Language Teacher &middot; Debrebrehan</span>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
